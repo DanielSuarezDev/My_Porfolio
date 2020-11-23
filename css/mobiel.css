@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(180deg, #040404 26.56%, #5f336f 100%);
+}
+
+/****************************HEADER**************************/
+header {
+  background-color: #fbf7f7;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+}
+
+header ul li a img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+header ul li a {
+  font-size: 1.3rem;
+  color: #000;
+}
+/****************************HEROOO**************************/
