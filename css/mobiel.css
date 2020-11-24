@@ -7,8 +7,15 @@
   list-style: none;
 }
 
+a {
+  transition: all 5s;
+}
+
 html {
   font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -23,15 +30,34 @@ body {
   --colorHeader: #000;
   --gray: gray;
   --botoDark: #5f336f;
+  --title: #FFB400;
 }
 
 .container {
   width: 90%;
   max-width: 900px;
   min-width: 320px;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
+.animado {
+  opacity: 0;
+  transition: all 3s;
+}
+
+/* .mostrarTop {
+  animation: mostrarTop 3s;
+}
+
+@keyframes mostrarTop {
+  0% {
+    transform: translateX(60px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+} */
 
 /****************************HEADER**************************/
 header {
@@ -59,6 +85,7 @@ header ul li a img {
 header ul li a {
   font-size: 1.3rem;
   color: var(--colorHeader);
+  transition: all 5s;
 }
 
 /****************************HEROOO**************************/
@@ -70,9 +97,10 @@ header ul li a {
 }
 
 .hero {
-  height: 60vh;
+  height: 90vh;
   width: 100%;
   padding: 160px 30px;
+
 }
 
 .hero__hi {
@@ -82,6 +110,7 @@ header ul li a {
 h1 {
   font-size: 3.4rem;
   padding: 10px 0;
+  font-weight: 900;
 }
 
 .hero__description {
@@ -109,11 +138,55 @@ h1 {
   }
 }
 
+/****************************ABOUT**************************/
+.about__title {
+  font-size: 3rem;
+  color: var(--title);
+  font-weight: 900;
+  border-top: 2px solid var(--gray);
+  padding: 40px 0;
+
+}
+
+.info {
+  display: flex;
+}
+
+.info_profile img {
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.info__title {
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+}
+
+.city-pais {
+  display: flex;
+}
+
+.infor__city {
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+
+.info__profession {
+  font-size: 1.3rem;
+  color: var(--title);
+}
+
+.text {
+  font-size: 1.8rem;
+  padding: 15px 5px;
+}
+
 
 
 /****************************BOTON DARK**************************/
 
 .dark__mode {
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
