@@ -1,3 +1,4 @@
+/****************************ENTORNO BASICO**************************/
 * {
   padding: 0;
   margin: 0;
@@ -9,13 +10,24 @@
 html {
   font-size: 62.5%;
 }
+
 body {
-  background: linear-gradient(180deg, #040404 26.56%, #5f336f 100%);
+  background: var(--base);
+  color: var(--color)
+}
+
+:root {
+  --color: #000;
+  --base: #fff;
+  --headerBackground: #fbf7f7;
+  --colorHeader: #000;
+  --gray: gray;
+  --botoDark: #5f336f;
 }
 
 /****************************HEADER**************************/
 header {
-  background-color: #fbf7f7;
+  background-color: var(--headerBackground);
   width: 100%;
   height: 10vh;
   justify-content: space-between;
@@ -37,6 +49,70 @@ header ul li a img {
 
 header ul li a {
   font-size: 1.3rem;
-  color: #000;
+  color: var(--colorHeader);
 }
+
 /****************************HEROOO**************************/
+
+
+/****************************BOTON DARK**************************/
+
+.dark__mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked~.botton-dark::before {
+  transform: translateX(0);
+}
+
+.botton-dark {
+  /* border: 1px solid red; */
+  height: 30px;
+  width: 60px;
+  display: block;
+  border-radius: 20px;
+  background: var(--gray);
+  padding: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.botton-dark::before {
+  content: "";
+  display: block;
+  background: var(--botoDark);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transform: translateX(30px);
+  transition: .3s;
+  will-change: transform;
+}
+
+.is-dark-mode {
+  --base: linear-gradient(180deg, #040404 26.56%, #5f336f 100%);
+  --color: #fff;
+}
+
+.is-light-mode {
+  --base: #fff;
+  --headerBackground: #fbf7f7;
+  --colorHeader: #000;
+  --gray: gray;
+  --botoDark: #5f336f;
+  --color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base: linear-gradient(180deg, #040404 26.56%, #5f336f 100%);
+    --color: #fff;
+  }
+}
