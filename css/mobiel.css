@@ -25,7 +25,12 @@ body {
   --botoDark: #5f336f;
 }
 
-
+.container {
+  width: 90%;
+  max-width: 900px;
+  min-width: 320px;
+  padding: 0 5px;
+}
 
 
 /****************************HEADER**************************/
@@ -61,24 +66,31 @@ header ul li a {
   width: 100%;
   height: 100%;
   position: fixed;
+  z-index: -1;
 }
 
 .hero {
-  /*   background-image: url('../images/images/hero.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 160px; */
   height: 60vh;
   width: 100%;
-  /* border: 1px solid red; */
+  padding: 160px 30px;
+}
+
+.hero__hi {
+  font-size: 1.6rem;
 }
 
 h1 {
-  float: left;
-  position: relative;
+  font-size: 3.4rem;
+  padding: 10px 0;
 }
 
-h1 span {
+.hero__description {
+  float: left;
+  position: relative;
+  font-size: 2rem;
+}
+
+.hero__description span {
   position: absolute;
   right: 0;
   width: 0;
