@@ -23,6 +23,7 @@ body {
   --gray: gray;
   --botoDark: #5f336f;
   --title: #ffb400;
+  --fondo: rgba(255, 255, 255, 0.6);
 }
 .container {
   width: 90%;
@@ -103,7 +104,7 @@ h1 {
 }
 /****************************ABOUT**************************/
 .about {
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--fondo);
   border-radius: 15px;
 }
 .linea {
@@ -198,10 +199,9 @@ h1 {
 /****************************BOTON DARK**************************/
 .dark__mode {
   /* position: fixed; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
+  position: fixed;
+  right: 0;
+  margin: 10px;
 }
 .checkbox {
   display: none;
@@ -215,7 +215,7 @@ h1 {
   width: 60px;
   display: block;
   border-radius: 20px;
-  background: var(--gray);
+  background: var(--dark);
   padding: 3px;
   cursor: pointer;
   user-select: none;
@@ -235,6 +235,13 @@ h1 {
   --base: #000;
   /* linear-gradient(180deg, #040404 26.56%, #5f336f 100%); */
   --color: #fff;
+  --dark: linear-gradient(
+    90deg,
+    #ffb400 13.38%,
+    rgba(33, 78, 167, 0.6) 52.24%,
+    #7a15fb 90.03%
+  );
+  --fondo: rgba(0, 0, 0, 0.9);
 }
 .is-light-mode {
   --base: #fff;
@@ -243,10 +250,18 @@ h1 {
   --gray: gray;
   --botoDark: #5f336f;
   --color: #000;
+  --fondo: rgba(255, 255, 255, 0.6);
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --base: #000;
     --color: #fff;
+    --dark: linear-gradient(
+      90deg,
+      #ffb400 13.38%,
+      rgba(33, 78, 167, 0.6) 52.24%,
+      #7a15fb 90.03%
+    );
+    --fondo: rgba(0, 0, 0, 0.9);
   }
 }
