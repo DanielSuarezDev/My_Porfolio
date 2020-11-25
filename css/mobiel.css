@@ -6,23 +6,15 @@
   text-decoration: none;
   list-style: none;
 }
-
-a {
-  transition: all 5s;
-}
-
 html {
   font-size: 62.5%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
-
 }
-
 body {
   background: var(--base);
-  color: var(--color)
+  color: var(--color);
 }
-
 :root {
   --color: #000;
   --base: #fff;
@@ -30,35 +22,19 @@ body {
   --colorHeader: #000;
   --gray: gray;
   --botoDark: #5f336f;
-  --title: #FFB400;
+  --title: #ffb400;
 }
-
 .container {
   width: 90%;
   max-width: 900px;
   min-width: 320px;
-  padding: 0 10px;
+  /* padding: 0 10px; */
+  margin: 0 auto;
 }
-
 .animado {
   opacity: 0;
   transition: all 3s;
 }
-
-/* .mostrarTop {
-  animation: mostrarTop 3s;
-}
-
-@keyframes mostrarTop {
-  0% {
-    transform: translateX(60px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-} */
-
 /****************************HEADER**************************/
 header {
   background-color: var(--headerBackground);
@@ -69,25 +45,21 @@ header {
   bottom: 0;
   border-radius: 13px 13px 0 0;
 }
-
 header ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: inherit;
 }
-
 header ul li a img {
   display: block;
   margin: 0 auto 10px;
 }
-
 header ul li a {
   font-size: 1.3rem;
   color: var(--colorHeader);
   transition: all 5s;
 }
-
 /****************************HEROOO**************************/
 #particles-js {
   width: 100%;
@@ -95,30 +67,24 @@ header ul li a {
   position: fixed;
   z-index: -1;
 }
-
 .hero {
   height: 90vh;
   width: 100%;
   padding: 160px 30px;
-
 }
-
 .hero__hi {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
-
 h1 {
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   padding: 10px 0;
   font-weight: 900;
 }
-
 .hero__description {
   float: left;
   position: relative;
   font-size: 2rem;
 }
-
 .hero__description span {
   position: absolute;
   right: 0;
@@ -127,64 +93,109 @@ h1 {
   background: var(--base);
   animation: maquina 3s infinite alternate steps(26);
 }
-
 @keyframes maquina {
   from {
     width: 100%;
   }
-
   to {
     width: 0;
   }
 }
-
 /****************************ABOUT**************************/
+.about {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+}
+.linea {
+  border-bottom: 4px solid var(--title);
+  width: 90px;
+  margin-bottom: 40px;
+}
 .about__title {
   font-size: 3rem;
   color: var(--title);
   font-weight: 900;
-  border-top: 2px solid var(--gray);
-  padding: 40px 0;
-
 }
-
 .info {
   display: flex;
 }
-
 .info_profile img {
   border-radius: 50%;
   margin: 0 15px;
 }
-
 .info__title {
   font-size: 2.4rem;
   margin-bottom: 5px;
 }
-
 .city-pais {
   display: flex;
 }
-
 .infor__city {
   font-size: 1.4rem;
   margin-right: 5px;
 }
-
 .info__profession {
   font-size: 1.3rem;
   color: var(--title);
+  font-weight: 700;
 }
-
 .text {
   font-size: 1.8rem;
   padding: 15px 5px;
 }
+.redes {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
 
-
-
+.redes img {
+  width: 40px;
+  height: 40px;
+  color: var(--title);
+}
+.services__articles {
+  display: flex;
+  height: 250px;
+  align-items: center;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.services h2 {
+  color: #c7adcd;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.services__card {
+  scroll-snap-align: center;
+  height: 150px;
+  width: 60%;
+  min-width: 205px;
+  max-width: 350px;
+  /* border: 1px solid red; */
+  background: linear-gradient(180deg, #ffb400 0%, #ac84b6 91.15%);
+  padding: 30px 10px;
+  border-radius: 15px;
+  margin: 20px 10px 20px 0;
+}
+.services__card img {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+}
+.services__card span {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+/******************************************************/
 /****************************BOTON DARK**************************/
-
 .dark__mode {
   /* position: fixed; */
   display: flex;
@@ -192,15 +203,12 @@ h1 {
   align-items: center;
   padding: 5px;
 }
-
 .checkbox {
   display: none;
 }
-
-.checkbox:checked~.botton-dark::before {
+.checkbox:checked ~ .botton-dark::before {
   transform: translateX(0);
 }
-
 .botton-dark {
   /* border: 1px solid red; */
   height: 30px;
@@ -212,7 +220,6 @@ h1 {
   cursor: pointer;
   user-select: none;
 }
-
 .botton-dark::before {
   content: "";
   display: block;
@@ -221,16 +228,14 @@ h1 {
   height: 25px;
   border-radius: 50%;
   transform: translateX(30px);
-  transition: .3s;
+  transition: 0.3s;
   will-change: transform;
 }
-
 .is-dark-mode {
   --base: #000;
   /* linear-gradient(180deg, #040404 26.56%, #5f336f 100%); */
   --color: #fff;
 }
-
 .is-light-mode {
   --base: #fff;
   --headerBackground: #fbf7f7;
@@ -239,7 +244,6 @@ h1 {
   --botoDark: #5f336f;
   --color: #000;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --base: #000;
