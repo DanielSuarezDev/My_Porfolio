@@ -248,9 +248,19 @@ h1 {
   --headerBackground: #fbf7f7;
   --colorHeader: #000;
   --gray: gray;
-  --botoDark: #5f336f;
+  --botoDark: linear-gradient(
+    90deg,
+    rgba(255, 180, 0, 0.76) 15.4%,
+    rgba(255, 231, 106, 0.9) 49.63%
+  );
   --color: #000;
   --fondo: rgba(255, 255, 255, 0.6);
+  --dark: linear-gradient(
+    90deg,
+    #76757d 70.06%,
+    rgba(174, 171, 163, 0.88) 94.35%,
+    #b0b1b3 110%
+  );
 }
 @media (prefers-color-scheme: dark) {
   :root {
