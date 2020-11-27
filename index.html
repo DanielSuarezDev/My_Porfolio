@@ -32,12 +32,12 @@
           >
         </li>
         <li>
-          <a href="#">
+          <a href="#learnind">
             <img src="images/icons/learning.svg" alt="" /> Learning</a
           >
         </li>
         <li>
-          <a href="#"> <img src="images/icons/contac.svg" alt="" /> Contac</a>
+          <a href="#contact"> <img src="images/icons/contac.svg" alt="" /> Contac</a>
         </li>
         <li>
           <a href="#"> <img src="images/icons/blog.svg" alt="" /> Blog</a>
@@ -486,31 +486,64 @@
       
       </section>
 
-      <section class="Learning">
-        <h2 class="container">Learning</h2>
-
+      <section class="Learning" id="learnind">
+        <h2 class="container subtitle">Learning</h2>
+        <div class="linea"></div>
         <div class="container">
-          <p>Una de mis pasiones es enseñar, y es por eso que desidí abrir mi canal de youtube en donde realizo vlive coding, dicto
+          <p class="learning__description">Una de mis pasiones es enseñar, y es por eso que desidí abrir mi canal de youtube en donde realizo vlive coding, dicto
           cursos, ¿ya te suscribiste?</p>
         </div>
-        <h2 class="container">Cursos</h2>
-        <div>
-          <article>
+        <h2 class="container items">Cursos y charlas</h2>
+
+        <section class="target__containt-section">
+          <article class="target__course">
+            <figure class="img">
+              <img src="./images/images/proyecto.png" alt="">
+            </figure>
+            <h3>Portafolio Personal</h3>
+            <p>Aprende a iniciar en html, css y JavaScript, creando un proyecto final y que sera de gran ayuda.</p>
+            <small>2020</small>
+          </article>
+
+          <article class="target__course">
             <figure>
               <img src="./images/images/proyecto.png" alt="">
             </figure>
-            <p class="container">Cruso Practico Personal</p>
+            <h3>Portafolio Personal</h3>
+            <p>Aprende a iniciar en html, css y JavaScript, creando un proyecto final y que sera de gran ayuda.</p>
+            <small>2020</small>
           </article>
-        </div>
-        <h2 class="container">Charlas</h2>
-        <div>
-          <article>
+
+          <article class="target__course" >
             <figure>
-              <img src="./images/images/profile.jpg" alt="">
+              <img src="./images/images/proyecto.png" alt="">
             </figure>
-            <p class="container">Como tener Exito en JavaScript<br> Guillermo Rodas</p>
+            <h3>Portafolio Personal</h3>
+            <p>Aprende a iniciar en html, css y JavaScript, creando un proyecto final y que sera de gran ayuda.</p>
+            <small>2020</small>
           </article>
-        </div>
+      </section>
+
+
+
+      <section class="contact" id="contact">
+        <h2>Contactame</h2>
+        <form action="" class="form">
+
+          <label for="name" class="label__title">Nombre</label>            
+            <input type="text" placeholder="Escribe tu nombre" id="name" class="input__form">
+
+
+          <label for="email" class="label__title">Email</label>
+            <input type="email" placeholder="Dejame tu email" id="email" class="input__form">
+
+
+          <label for="comments" class="label__title">Texto</label>
+            <input type="text" placeholder="¿Que quieres decirme?" id="comments" class="input__form">
+            <div id="respuesta" class="alert"></div>
+          
+          <button id="submit" class="botonEnviar">Enviar</button>
+        </form>
       </section>
     </main>
 
@@ -520,5 +553,6 @@
     <script src="./js/particles.js"></script>
     <script src="./js/particulas.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
