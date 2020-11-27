@@ -33,34 +33,3 @@ function mostrar() {
 }
 
 window.addEventListener('scroll', mostrar);
-
-
-
-addEventListener('DOMContentLoaded', () => {
-  const btn_menu = document.querySelector('')
-})
-
-
-/*ACTIVE SECCION */
-const seccion = document.querySelectorAll('.section')
-const menuActives = document.querySelectorAll('.active')
-
-const fnOberver = entries => {
-  entries.forEach(entry => {
-    const activeSelect = array.from(menuActives).find(active.dataset.url === entry.target.id)
-    activeSelect.classList.add('active')
-    for (const item of menuActives) {
-      if (item |= activeSelect) {
-        item.classList.remove('active')
-      }
-    }
-  })
-}
-
-const observer = new IntersectionObserver(fnOberver, {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.8
-})
-
-seccion.forEach(seccion => observer.observe(seccion))
