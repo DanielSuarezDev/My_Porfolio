@@ -10,38 +10,48 @@
     />
     <link rel="stylesheet" href="./css/mobiel.css" />
     <title>Daniel Suarez Dev</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVW35C2YHG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-RVW35C2YHG');
+    </script>
   </head>
 
   <body>
     <div id="particles-js"></div>
     <header>
       <ul>
-        <li>
+        <li class="active" data-url="about">
           <a href="#about">
             <img src="images/icons/about.svg" alt="" /> About</a
           >
         </li>
-        <li>
+        <li class="active" data-url="skill">
           <a href="#skills">
             <img src="images/icons/skill.svg" alt="" /> Skill</a
           >
         </li>
-        <li>
+        <li class="active" data-url="projects">
           <a href="#projects">
             <img src="images/icons/project.svg" alt="" /> Projects</a
           >
         </li>
-        <li>
+        <li class="active" data-url="learning">
           <a href="#learnind">
             <img src="images/icons/learning.svg" alt="" /> Learning</a
           >
         </li>
-        <li>
-          <a href="#contact"> <img src="images/icons/contac.svg" alt="" /> Contac</a>
+        <li class="active" data-url="contact">
+          <a href="#contact"> <img src="images/icons/contac.svg" alt="" /> Contact</a>
         </li>
-        <li>
+        <li class="active" data-url="blog">
           <a href="#"> <img src="images/icons/blog.svg" alt="" /> Blog</a>
         </li>
+        <div class="animations start-home"></div>
       </ul>
     </header>
 
@@ -58,7 +68,7 @@
           <p>Front End Developer. . <span>&#160;</span></p>
         </div>
       </section>
-      <section class="about" id="about">
+      <section class="about section" id="about">
         <div class="container">
           <h2 class="subtitle">About</h2>
           <div class="linea"></div>
