@@ -25,8 +25,6 @@ async function precache() {
     '/index.html',
     '/js/app.js',
     '/js/form.js',
-    '/js/particles.js',
-    '/js/particulas.js',
     '/css/mobilel.css',
     '/css/tablet.css',
     '/css/deskopt.css',
