@@ -24,19 +24,15 @@ body {
   --headerBackground: rgba(255, 180, 0, 0.9);
   --colorHeader: #000;
   --gray: gray;
-  --botoDark: linear-gradient(
-    90deg,
-    rgba(255, 180, 0, 0.76) 15.4%,
-    rgba(255, 231, 106, 0.9) 49.63%
-  );
+  --botoDark: linear-gradient(90deg,
+      rgba(255, 180, 0, 0.76) 15.4%,
+      rgba(255, 231, 106, 0.9) 49.63%);
   --title: #ffb400;
   --fondo: rgba(255, 255, 255, 0.6);
-  --dark: linear-gradient(
-    90deg,
-    #76757d 70.06%,
-    rgba(174, 171, 163, 0.88) 94.35%,
-    #b0b1b3 110%
-  );
+  --dark: linear-gradient(90deg,
+      #76757d 70.06%,
+      rgba(174, 171, 163, 0.88) 94.35%,
+      #b0b1b3 110%);
   --items: #2e8eff;
 }
 
@@ -57,7 +53,7 @@ body {
   font-size: 4rem;
   color: var(--title);
   border-bottom: 5px solid var(--title);
-  width: 50%;
+  /* width: 50%; */
   margin: 40px 0;
   display: flex;
   align-items: center;
@@ -190,10 +186,12 @@ h1 {
   font-size: 1.8rem;
   padding: 15px 5px;
 }
+
 .text__detail {
   font-size: 1.7rem;
   text-align: left;
 }
+
 .redes {
   display: flex;
   justify-content: space-around;
@@ -331,7 +329,7 @@ h1 {
   scroll-snap-align: center;
   margin-right: 45px;
   text-align: center;
-  margin: 20px 10px 20px 20px;
+  margin: 20px 2px 20px 16px;
 }
 
 .coding__article img {
@@ -365,13 +363,16 @@ h1 {
   margin-top: 30px;
   padding-top: 30px;
 }
+
 .project__title i img {
   width: 20px;
   height: 20px;
 }
+
 .title_proyectos {
   padding: 20px 0;
 }
+
 .container__projects {
   display: flex;
   overflow-x: scroll;
@@ -384,10 +385,12 @@ h1 {
   height: 200px;
   border-radius: 15px;
 }
+
 .project__screenshots img {
   width: 200px;
   height: 350px;
 }
+
 .project_article {
   font-size: 1.6rem;
   text-align: center;
@@ -413,6 +416,9 @@ h1 {
   color: #fff;
   font-weight: bold;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project__description-p {
@@ -433,7 +439,14 @@ h1 {
 }
 
 .clients__log {
-  margin: 30px;
+  margin: 30px 10px;
+}
+
+.clients__log span {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .recomendacion__articles-target {
@@ -467,51 +480,55 @@ h1 {
   margin: 20px auto;
 }
 
-.target__containt-section {
+.learnin_course {
   display: flex;
-  height: 350px;
-  /* min-width: 320px;
-  max-width: 450px;
-  width: 200px; */
-  align-items: center;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
 
-.target__course {
-  scroll-snap-align: scroll;
+.learning__course-article {
+  scroll-snap-align: center;
   background: linear-gradient(180deg, #b7b7b7 0%, #ffffff 74.48%);
-  margin: 10px 20px;
+  color: #000;
+  min-width: 250px;
+  max-width: 300px;
+  height: 250px;
+  width: 69%;
+  margin: 0 11px;
   border-radius: 10px;
-  /* overflow: hidden; */
-  margin-right: 15px;
-  border: 1px solid #000;
+  overflow: hidden;
 }
 
-.img img {
+.learnin_course img {
+  width: 100%;
+  height: 100px;
   object-fit: cover;
 }
 
-.target__course h3 {
-  color: #2e8eff;
+.learning__course-article h3,
+p,
+span {
   padding: 10px;
-  font-weight: 700;
-  font-size: 1.6rem;
 }
 
-.target__course p {
-  color: #000;
-  padding: 10px;
+.learning__course-article p {
   font-size: 1.3rem;
 }
 
-.target__course small {
-  color: #000;
-  padding: 15px;
-  font-weight: 700;
-  font-size: 1.3rem;
+.learning__course-article span {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
+
+.learning__course-article span img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+
 
 /****************************FORMULARIO**************************/
 .form {
@@ -573,7 +590,7 @@ footer {
   display: none;
 }
 
-.checkbox:checked ~ .botton-dark::before {
+.checkbox:checked~.botton-dark::before {
   transform: translateX(0);
 }
 
@@ -615,19 +632,15 @@ footer {
 
   --colorHeader: #000;
   --gray: gray;
-  --botoDark: linear-gradient(
-    90deg,
-    rgba(255, 180, 0, 0.76) 15.4%,
-    rgba(255, 231, 106, 0.9) 49.63%
-  );
+  --botoDark: linear-gradient(90deg,
+      rgba(255, 180, 0, 0.76) 15.4%,
+      rgba(255, 231, 106, 0.9) 49.63%);
   --color: #000;
   --fondo: rgba(255, 255, 255, 0.6);
-  --dark: linear-gradient(
-    90deg,
-    #24221f 13.38%,
-    rgba(40, 42, 46, 0.6) 52.24%,
-    #615175 90.03%
-  );
+  --dark: linear-gradient(90deg,
+      #24221f 13.38%,
+      rgba(40, 42, 46, 0.6) 52.24%,
+      #615175 90.03%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -636,11 +649,9 @@ footer {
     --color: #fff;
     --dark: linear-gradient(180deg, #b7b7b7 0%, #ffffff 74.48%);
     --fondo: rgba(0, 0, 0, 0.9);
-    --botoDark: linear-gradient(
-      90deg,
-      rgba(255, 180, 0, 0.76) 15.4%,
-      rgba(255, 231, 106, 0.9) 49.63%
-    );
+    --botoDark: linear-gradient(90deg,
+        rgba(255, 180, 0, 0.76) 15.4%,
+        rgba(255, 231, 106, 0.9) 49.63%);
   }
 }
 
