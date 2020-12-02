@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/mobiel.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px">
+    <link rel="stylesheet" href="./css/deskopt.css" media="(min-width:1024px">
     <title>Daniel Suarez Dev</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVW35C2YHG"></script>
@@ -162,7 +164,9 @@
             </div>
           </section>
           <section class="experience container">
+
             <h2 class="items">Mi Experiencia</h2>
+            <div class="deskopt">
             <article class="experience__articles">
               <figure class="experience__articles-img">
                 <img src="./images/icons/experience.svg" alt="" />
@@ -199,6 +203,7 @@
                 <p>Paises en presencia</p>
               </div>
             </article>
+            </div>
           </section>
           <section class="estuding">
             <div class="container">
@@ -208,6 +213,42 @@
               </h2>
             </div>
             <div class="container_course">
+              <article class="estuding__course">
+                <figure class="estuding__course-img">
+                  <img src="./images/icons/javaScript.svg" alt="" />
+                </figure>
+                <div class="estuding__course-detail">
+                  <h3>javaScript</h3>
+                  <p>2020 - Platzi</p>
+                </div>
+                <div class="botonVer">
+                  <a href="#">Ver</a>
+                </div>
+              </article>
+              <article class="estuding__course">
+                <figure class="estuding__course-img">
+                  <img src="./images/icons/javaScript.svg" alt="" />
+                </figure>
+                <div class="estuding__course-detail">
+                  <h3>javaScript</h3>
+                  <p>2020 - Platzi</p>
+                </div>
+                <div class="botonVer">
+                  <a href="#">Ver</a>
+                </div>
+              </article>
+              <article class="estuding__course">
+                <figure class="estuding__course-img">
+                  <img src="./images/icons/javaScript.svg" alt="" />
+                </figure>
+                <div class="estuding__course-detail">
+                  <h3>javaScript</h3>
+                  <p>2020 - Platzi</p>
+                </div>
+                <div class="botonVer">
+                  <a href="#">Ver</a>
+                </div>
+              </article>
               <article class="estuding__course">
                 <figure class="estuding__course-img">
                   <img src="./images/icons/javaScript.svg" alt="" />
@@ -515,7 +556,7 @@
           <section class="learnin_course">
            <article class="learning__course-article">
              <figure>
-               <img src="./images/images/csf.jpg" alt="">
+               <img src="./images/images/patata.svg" alt="">
              </figure>
              <div>
                <h3>Como tener Exito en JavaScript</h3>
@@ -556,25 +597,25 @@
 
       <section class="contact" id="contact">
         <div class="container">
-        <h2 class="subtitle">Contactame</h2>
+          <h2 class="subtitle">Contact</h2>
         </div>
         <div class="linea container"></div>
-        <form action="" class="form">
+          <form action="" class="form">
 
-          <label for="name" class="label__title">Nombre</label>            
-            <input type="text" placeholder="Escribe tu nombre" id="name" class="input__form">
-
-
-          <label for="email" class="label__title">Email</label>
-            <input type="email" placeholder="Dejame tu email" id="email" class="input__form">
+            <label for="name" class="label__title">Nombre</label>            
+              <input type="text" placeholder="Escribe tu nombre" id="name" class="input__form">
 
 
-          <label for="comments" class="label__title">Texto</label>
-            <input type="text" placeholder="¿Que quieres decirme?" id="comments" class="input__form">
-            <div id="respuesta" class="alert"></div>
-          
-          <button id="submit" class="botonEnviar">Enviar</button>
-        </form>
+            <label for="email" class="label__title">Email</label>
+              <input type="email" placeholder="Dejame tu email" id="email" class="input__form">
+
+
+            <label for="comments" class="label__title">Comentario</label>
+              <input type="text" placeholder="¿Que quieres decirme?" id="comments" class="input__form">
+              <div id="respuesta" class="alert"></div>
+            
+            <button id="submit" class="botonEnviar">Enviar</button>
+          </form>
       </section>
     </main>
 

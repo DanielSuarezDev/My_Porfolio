@@ -148,7 +148,8 @@ h1 {
 .skills,
 .proyectos,
 .services,
-.Learning {
+.Learning,
+.contact {
   background: var(--fondo);
   border-radius: 15px;
 }
@@ -206,7 +207,7 @@ h1 {
 
 .services__articles {
   display: flex;
-  height: 250px;
+  /* height: 250px; */
   align-items: center;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -218,7 +219,7 @@ h1 {
   height: 150px;
   width: 60%;
   min-width: 130px;
-  max-width: 350px;
+  max-width: 210px;
   background: linear-gradient(180deg, #b7b7b7 0%, #ffffff 74.48%);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
   border: none;
@@ -272,7 +273,7 @@ h1 {
 }
 
 .container_course {
-  height: 150px;
+  /* height: 150px; */
   display: flex;
   margin: 30px 0;
   overflow-x: scroll;
@@ -319,7 +320,7 @@ h1 {
 .skill__container {
   display: flex;
   align-items: center;
-  height: 150px;
+  /* height: 150px; */
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
@@ -583,7 +584,7 @@ footer {
   /* position: fixed; */
   position: fixed;
   right: 0;
-  margin: 10px;
+  margin: 5px 10px;
 }
 
 .checkbox {
@@ -597,7 +598,7 @@ footer {
 .botton-dark {
   /* border: 1px solid red; */
   height: 25px;
-  width: 40px;
+  width: 60px;
   display: block;
   border-radius: 20px;
   background: var(--dark);
@@ -613,7 +614,7 @@ footer {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  transform: translateX(18px);
+  transform: translateX(35px);
   transition: 0.3s;
   will-change: transform;
 }
@@ -652,11 +653,5 @@ footer {
     --botoDark: linear-gradient(90deg,
         rgba(255, 180, 0, 0.76) 15.4%,
         rgba(255, 231, 106, 0.9) 49.63%);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .form {
-    padding: 10px 70px;
   }
 }
