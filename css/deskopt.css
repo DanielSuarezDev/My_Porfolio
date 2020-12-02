@@ -57,5 +57,12 @@
 
  footer {
    height: 10vh;
+ }
 
+ .botton-dark {
+   width: 60px;
+ }
+
+ .botton-dark::before {
+   transform: translateX(35px);
  }
