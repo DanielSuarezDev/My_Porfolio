@@ -6,12 +6,12 @@
   "theme_color": "#000",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "./",
+  "start_url": "./index.html",
   "scope": "./",
   "lang": "es",
   "icons": [{
     "src": "./images/images/logotipo.svg",
     "sizes": "1024x1024",
-    "type": "image/png"
+    "type": "image/svg"
   }]
 }
