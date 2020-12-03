@@ -10,7 +10,7 @@
   "scope": "./",
   "lang": "es",
   "icons": [{
-    "src": "./images/images/logotipo.png",
+    "src": "./images/images/logotipo.svg",
     "sizes": "1024x1024",
     "type": "image/png"
   }]
