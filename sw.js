@@ -28,6 +28,9 @@ async function precache() {
     '/css/mobilel.css',
     '/css/tablet.css',
     '/css/deskopt.css',
+    '/images/images/logotipo.png',
+    '/images/icons/favicon.svg',
+    './script.js',
   ]);
 }
 
