@@ -66,3 +66,7 @@
  .botton-dark::before {
    transform: translateX(35px);
  }
+
+ .learning__course-article {
+   margin-top: 20px;
+ }
