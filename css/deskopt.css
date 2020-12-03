@@ -1,0 +1,68 @@
+ .items {
+   font-size: 3rem;
+ }
+
+ header {
+   top: 0;
+   border-radius: 0;
+ }
+
+ .hero {
+   height: 100vh;
+   padding: 288px 120px;
+ }
+
+ .hero__hi {
+   font-size: 3.8rem;
+ }
+
+ h1 {
+   font-size: 7.5rem;
+ }
+
+ .hero__description {
+   font-size: 4rem;
+ }
+
+ .text__detail,
+ .project__description-p,
+ .recomendacion__articles p,
+ .learning__description {
+   font-size: 2rem;
+ }
+
+ .services__articles,
+ .container_course,
+ .skill__container,
+ .container__projects,
+ .clients,
+ .learnin_course {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   overflow: hidden;
+ }
+
+ .deskopt {
+   display: flex;
+ }
+
+ .estuding__course {
+   margin: 20px 25px;
+ }
+
+ .form {
+   padding: 10px 254px;
+ }
+
+ footer {
+   height: 10vh;
+ }
+
+ .botton-dark {
+   width: 60px;
+ }
+
+ .botton-dark::before {
+   transform: translateX(35px);
+ }

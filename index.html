@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/mobiel.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px">
+    <link rel="stylesheet" href="./css/deskopt.css" media="(min-width:1024px">
     <title>Daniel Suarez Dev</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVW35C2YHG"></script>
@@ -27,29 +29,29 @@
       <ul>
         <li class="active" data-url="about">
           <a href="#about">
-            <img src="images/icons/about.svg" alt="" /> About</a
+            <img src="images/icons/about.svg" alt="Acerca de mi" /> Acerca</a
           >
         </li>
         <li class="active" data-url="skill">
           <a href="#skills">
-            <img src="images/icons/skill.svg" alt="" /> Skill</a
+            <img src="images/icons/skill.svg" alt="Mis habilidades" /> Habilidades</a
           >
         </li>
         <li class="active" data-url="projects">
           <a href="#projects">
-            <img src="images/icons/project.svg" alt="" /> Projects</a
+            <img src="images/icons/project.svg" alt="Mis proyectos" /> Proyectos</a
           >
         </li>
         <li class="active" data-url="learning">
           <a href="#learnind">
-            <img src="images/icons/learning.svg" alt="" /> Learning</a
+            <img src="images/icons/learning.svg" alt="Coach" /> Mentorias</a
           >
         </li>
         <li class="active" data-url="contact">
-          <a href="#contact"> <img src="images/icons/contac.svg" alt="" /> Contact</a>
+          <a href="#contact"> <img src="images/icons/contac.svg" alt="Contacto" /> Contacto</a>
         </li>
         <li class="active" data-url="blog">
-          <a href="#"> <img src="images/icons/blog.svg" alt="" /> Blog</a>
+          <a href="#"> <img src="images/icons/blog.svg" alt="Mi Blog" /> Blog</a>
         </li>
         <div class="animations start-home"></div>
       </ul>
@@ -70,7 +72,7 @@
       </section>
       <section class="about section" id="about">
         <div class="container">
-          <h2 class="subtitle">About</h2>
+          <h2 class="subtitle">Acerca de mi</h2>
           <div class="linea"></div>
           <section>
             <div class="info">
@@ -83,40 +85,42 @@
                   <p class="infor__city">Bogotá - Colombia</p>
                   <img src="./images/icons/colombia.svg" alt="" />
                 </div>
-                <p class="info__profession">Frontend Developer - Education</p>
+                <p class="info__profession">Frontend Developer - Coach</p>
               </div>
             </div>
             <div class="text">
               <p class="text__detail">
-                Desarrollador Frontend Developer, apasionado por la tecnología, autodidacta y persistente en entregar lo mejor para el cliente, cuento con amplia experiencia en el desarrollo web, soy una persona cumplida y con capacidad de adaptarme a diferentes entornos.
+                Frontend Developer, apasionado por la tecnología, autodidacta y persistente en entregar lo mejor para el cliente, cuento con amplia experiencia en el desarrollo web, soy una persona cumplida y con capacidad de adaptarme a diferentes entornos.
               </p>
             </div>
             <div class="redes">
-              <img
+              <a href="https://github.com/DanielSuarezDev" target="_blank"><img
                 src="./images/icons/github.svg"
-                alt=""
-                class="redes__social"
-              />
-              <img
-                src="./images/icons/facebook.svg"
-                alt=""
-                class="redes__social"
-              />
-              <img
-                src="./images/icons/twitter.svg"
-                alt=""
-                class="redes__social"
-              />
-              <a href="#"><img
-                src="./images/icons/youtube.svg"
-                alt=""
+                alt="Github"
                 class="redes__social"
               /></a>
-              <img
-                src="./images/icons/linkedin.svg"
-                alt=""
+              <a href="https://www.facebook.com/groups/599742427578264" target="_blank"><img
+                src="./images/icons/facebook.svg"
+                alt="Facebook"
                 class="redes__social"
-              />
+              /></a>
+              <a href="https://twitter.com/DanielSuarezDev" target="_blank"><img
+                src="./images/icons/twitter.svg"
+                alt="Twitter"
+                class="redes__social"
+              /></a>
+              <a href="https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA?view_as=subscriber" target="_blank"><img
+                src="./images/icons/youtube.svg"
+                alt="Youtube"
+                class="redes__social"
+              /></a>
+              <a href="#" target="_blank">                
+                <img
+                  src="./images/icons/linkedin.svg"
+                  alt=""
+                  class="redes__social"
+                />
+              </a>
             </div>
             </div>
           <!-- </section> -->
@@ -125,7 +129,7 @@
 
               <h2 class="items">
                 Mis Servicios
-                <i><img src="./images/icons/arrowwidht.svg" alt=""/></i>
+                <!-- <i><img src="./images/icons/arrowwidht.svg" alt=""/></i> -->
               </h2>
             </div>
             <div class="services__articles">
@@ -160,7 +164,9 @@
             </div>
           </section>
           <section class="experience container">
+
             <h2 class="items">Mi Experiencia</h2>
+            <div class="deskopt">
             <article class="experience__articles">
               <figure class="experience__articles-img">
                 <img src="./images/icons/experience.svg" alt="" />
@@ -197,12 +203,13 @@
                 <p>Paises en presencia</p>
               </div>
             </article>
+            </div>
           </section>
           <section class="estuding">
             <div class="container">
 
               <h2 class="items">
-                Estuding <i><img src="./images/icons/arrowwidht.svg" alt=""/></i>
+                Mis estudios <!-- <i><img src="./images/icons/arrowwidht.svg" alt=""/></i> -->
               </h2>
             </div>
             <div class="container_course">
@@ -317,6 +324,42 @@
                   <a href="#">Ver</a>
                 </div>
               </article>
+              <article class="estuding__course">
+                <figure class="estuding__course-img">
+                  <img src="./images/icons/javaScript.svg" alt="" />
+                </figure>
+                <div class="estuding__course-detail">
+                  <h3>javaScript</h3>
+                  <p>2020 - Platzi</p>
+                </div>
+                <div class="botonVer">
+                  <a href="#">Ver</a>
+                </div>
+              </article>
+              <article class="estuding__course">
+                <figure class="estuding__course-img">
+                  <img src="./images/icons/javaScript.svg" alt="" />
+                </figure>
+                <div class="estuding__course-detail">
+                  <h3>javaScript</h3>
+                  <p>2020 - Platzi</p>
+                </div>
+                <div class="botonVer">
+                  <a href="#">Ver</a>
+                </div>
+              </article>
+              <article class="estuding__course">
+                <figure class="estuding__course-img">
+                  <img src="./images/icons/javaScript.svg" alt="" />
+                </figure>
+                <div class="estuding__course-detail">
+                  <h3>javaScript</h3>
+                  <p>2020 - Platzi</p>
+                </div>
+                <div class="botonVer">
+                  <a href="#">Ver</a>
+                </div>
+              </article>
             </div>
           </section>
         </div>
@@ -324,7 +367,7 @@
 
       <section class="skills" id="skills">
           <div class="container">
-            <h2 class="subtitle">Skill</h2>           
+            <h2 class="subtitle">Mis Habilidades</h2>           
           </div>
 
           <section class="coding">
@@ -332,7 +375,7 @@
               <div class="container">
 
                 <h2 class="items">
-                  Coding <i><img src="./images/icons/arrowwidht.svg" alt=""/></i>
+                   <!-- <i><img src="./images/icons/arrowwidht.svg" alt=""/></i> -->
                 </h2>
               </div>
             </div>
@@ -350,6 +393,11 @@
               <article class="coding__article">
                 <img src="./images/icons/js.svg" alt="" />
                 <p>JAVASCRIPT</p>
+              </article>
+
+               <article class="coding__article">
+                <img src="./images/icons/excel.svg" alt="" />
+                <p>Excel (macros)</p>
               </article>
 
               <article class="coding__article">
@@ -374,7 +422,7 @@
             </div>
           </section>
           <section class="lenguages container">
-            <h2 class="items">Lenguages</h2>
+            <h2 class="items">Idiomas</h2>
 
             <div class="leng1">
               <img src="./images/icons/espaniol.svg" alt="" />
@@ -382,7 +430,7 @@
             </div>
             <div class="leng1">
               <img src="./images/icons/ingles.svg" alt="" />
-              <p>Inlges Basico</p>
+              <p>Inlges Basico  (A2)</p>
             </div>
           </section>
         
@@ -391,14 +439,12 @@
       <section class="proyectos" id="projects">
         <div class="container">
           <h2 class="subtitle">
-            Proyectos <i><img src="./images/icons/arrowwidht.svg" alt=""/></i>
+            Proyectos <!-- <i><img src="./images/icons/arrowwidht.svg" alt=""/></i> -->
           </h2>        
 
           <div class="project__description-p">
             <p>
-              He tenido la oportunidad de trabjar con personas increibles y
-              untos hemos realizados proyectos magnificos, te invito a que mires
-              mis proyectos y dale vclic para que entres a sus
+              He tenido la oportunidad de trabjar con personas increibles y empresas sorprendentes, donde la mayor satisfacción es ver que sus espectativas se cumplen al maximo, te invito a mirar los proyectos que he realizado.
             </p>
           </div>
           </div>
@@ -416,7 +462,7 @@
                 <p>Plataforma Criptomonedas</p>
                 <small>css - html </small>
                 <div class="project__boton">
-                  <a href="https://bata-bit.vercel.app/">Visitar</a>
+                  <a href="https://bata-bit.vercel.app/" target="_blank">Visitar</a>
                 </div>
               </div>
             </article>
@@ -433,7 +479,7 @@
                 <p>Plataforma Educativa</p>
                 <small>css - html - JavaScript</small>
                 <div class="project__boton">
-                  <a href="https://cub-hazel.vercel.app/">Visitar</a>
+                  <a href="https://cub-hazel.vercel.app/" target="_blank">Visitar</a>
                 </div>
               </div>
             </article>
@@ -450,7 +496,7 @@
                 <p>Empresa de gas</p>
                 <small>css - html - JavaScript</small>
                 <div class="project__boton">
-                  <a href="https://gaslatinocomercializadora.vercel.app/">Visitar</a>
+                  <a href="https://gaslatinocomercializadora.vercel.app/" target="_blank">Visitar</a>
                 </div>
               </div>
             </article>
@@ -466,31 +512,16 @@
             <div class="clients">
             <article class="clients__log">
               <figure>
-              <img src="./images/images/csf.jpg" alt="">
+              <img src="./images/images/patata.svg" alt="">
               </figure>
-              <span>CSF - BBVA</span>
+              <!-- <span>CSF - BBVA</span> -->
             </article>
 
             <article class="clients__log">
               <figure>
-                <img src="./images/images/csf.jpg" alt="">
+                <img src="./images/images/cub.webp" alt="">
               </figure>
-              <span>CSF - BBVA</span>
-            </article>
-
-
-            <article class="clients__log">
-              <figure>
-                <img src="./images/images/csf.jpg" alt="">
-              </figure>
-              <span>CSF - BBVA</span>
-            </article>
-
-            <article class="clients__log">
-              <figure>
-                <img src="./images/images/csf.jpg" alt="">
-              </figure>
-              <span>CSF - BBVA</span>
+             <!--  <span>CSF - BBVA</span> -->
             </article>
 
 
@@ -498,7 +529,22 @@
               <figure>
                 <img src="./images/images/csf.jpg" alt="">
               </figure>
-              <span>CSF - BBVA</span>
+              <!-- <span>CSF - BBVA</span> -->
+            </article>
+
+            <article class="clients__log">
+              <figure>
+                <img src="./images/images/gaslatino.jpg" alt="">
+              </figure>
+              <!-- <span>CSF - BBVA</span> -->
+            </article>
+
+
+            <article class="clients__log">
+              <figure>
+                <img src="./images/images/siempreNinos.png" alt="">
+              </figure>
+              <!-- <span>CSF - BBVA</span> -->
             </article>
             </div>
           </section>
@@ -541,6 +587,7 @@
 
       <section class="Learning" id="learnind">
         <div class="container">
+<<<<<<< HEAD
           <h2 class="subtitle">Learning</h2>
         </div>
 
@@ -567,46 +614,85 @@
           <article class="target__course">
             <figure class="img">
               <img src="./images/images/deploy.png" alt="">
+=======
+          <h2 class="subtitle">Mentorias</h2>
+        </div>
+          
+          <div class="container">
+            <p class="learning__description">Aportar a la comunidad es una aprte esencial en el mundo del desarrollo, es opr eso que tome la desición de crear mi canal en donde enseño temas de tecnología y programación y asi mismo realizo acompañamiento a toda persona que inicia en este maravilloso mundo, tengo estudiantes de diferentes paises que con esfuerzo y dedicación realizamos proyectos para adentrarnos en el mundo de la web.</p>
+          </div>
+          <div class="container">
+            <h2 class="items">Cursos y charlas</h2>
+          </div>
+
+          <section class="learnin_course">
+           <article class="learning__course-article">
+             <figure>
+               <img src="./images/images/patata.svg" alt="">
+             </figure>
+             <div>
+               <h3>Como tener Exito en JavaScript</h3>
+               <p>En esta ocasión estuvimos con un Google developer Expert hablando de las maneras de tener exito en JavaScript y tambien tuvimos...</p>
+               <span>Ver <i><a href="https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA?view_as=subscriber" target="_blank"><img src="./images/icons/youtube.svg" alt=""></a></i></span>
+             </div>
+           </article>
+
+          <article class="learning__course-article">
+            <figure>
+              <img src="./images/images/csf.jpg" alt="">
+>>>>>>> 991df9b477831ebd289ef464b7a90cb89bdc5a59
             </figure>
-            <h3>Portafolio Personal</h3>
-            <p>Aprende a iniciar en html, css y JavaScript, creando un proyecto final y que sera de gran ayuda.</p>
-            <small>2020</small>
+            <div>
+              <h3>Como tener Exito en JavaScript</h3>
+              <p>En esta ocasión estuvimos con un Google developer Expert hablando de las maneras de tener exito en JavaScript y
+                tambien tuvimos...</p>
+              <span>Ver <i><a href="https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA?view_as=subscriber"
+                    target="_blank"><img src="./images/icons/youtube.svg" alt=""></a></i></span>
+            </div>
           </article>
 
-          <article class="target__course" >
+          <article class="learning__course-article">
             <figure>
-              <img src="./images/images/proyecto.png" alt="">
+              <img src="./images/images/csf.jpg" alt="">
             </figure>
-            <h3>Portafolio Personal</h3>
-            <p>Aprende a iniciar en html, css y JavaScript, creando un proyecto final y que sera de gran ayuda.</p>
-            <small>2020</small>
+            <div>
+              <h3>Como tener Exito en JavaScript</h3>
+              <p>En esta ocasión estuvimos con un Google developer Expert hablando de las maneras de tener exito en JavaScript y
+                tambien tuvimos...</p>
+              <span>Ver <i><a href="https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA?view_as=subscriber"
+                    target="_blank"><img src="./images/icons/youtube.svg" alt=""></a></i></span>
+            </div>
           </article>
+<<<<<<< HEAD
           </div>
+=======
+          </section>
+>>>>>>> 991df9b477831ebd289ef464b7a90cb89bdc5a59
       </section>
 
 
 
       <section class="contact" id="contact">
         <div class="container">
-        <h2 class="subtitle">Contactame</h2>
+          <h2 class="subtitle">Contacto</h2>
         </div>
         <div class="linea container"></div>
-        <form action="" class="form">
+          <form action="" class="form">
 
-          <label for="name" class="label__title">Nombre</label>            
-            <input type="text" placeholder="Escribe tu nombre" id="name" class="input__form">
-
-
-          <label for="email" class="label__title">Email</label>
-            <input type="email" placeholder="Dejame tu email" id="email" class="input__form">
+            <label for="name" class="label__title">Nombre</label>            
+              <input type="text" placeholder="Escribe tu nombre" id="name" class="input__form">
 
 
-          <label for="comments" class="label__title">Texto</label>
-            <input type="text" placeholder="¿Que quieres decirme?" id="comments" class="input__form">
-            <div id="respuesta" class="alert"></div>
-          
-          <button id="submit" class="botonEnviar">Enviar</button>
-        </form>
+            <label for="email" class="label__title">Email</label>
+              <input type="email" placeholder="Dejame tu email" id="email" class="input__form">
+
+
+            <label for="comments" class="label__title">Comentario</label>
+              <input type="text" placeholder="¿Que quieres decirme?" id="comments" class="input__form">
+              <div id="respuesta" class="alert"></div>
+            
+            <button id="submit" class="botonEnviar">Enviar</button>
+          </form>
       </section>
     </main>
 
