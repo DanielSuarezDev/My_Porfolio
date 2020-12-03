@@ -24,19 +24,15 @@ body {
   --headerBackground: rgba(255, 180, 0, 0.9);
   --colorHeader: #000;
   --gray: gray;
-  --botoDark: linear-gradient(
-    90deg,
-    rgba(255, 180, 0, 0.76) 15.4%,
-    rgba(255, 231, 106, 0.9) 49.63%
-  );
+  --botoDark: linear-gradient(90deg,
+      rgba(255, 180, 0, 0.76) 15.4%,
+      rgba(255, 231, 106, 0.9) 49.63%);
   --title: #ffb400;
   --fondo: rgba(255, 255, 255, 0.6);
-  --dark: linear-gradient(
-    90deg,
-    #76757d 70.06%,
-    rgba(174, 171, 163, 0.88) 94.35%,
-    #b0b1b3 110%
-  );
+  --dark: linear-gradient(90deg,
+      #76757d 70.06%,
+      rgba(174, 171, 163, 0.88) 94.35%,
+      #b0b1b3 110%);
   --items: #2e8eff;
 }
 
@@ -277,14 +273,24 @@ h1 {
 }
 
 .container_course {
-  /* height: 150px; */
   display: flex;
   margin: 30px 0;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  /* justify-items: center;
-  align-items: center; */
+}
+
+.misEstudios {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+.diplomas {
+  background: var(--title);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  color: #000;
 }
 
 .estuding__course {
@@ -499,6 +505,7 @@ h1 {
 .contenedor__target-youtube {
   display: flex;
 }
+
 .target__course {
   scroll-snap-align: scroll;
 }
@@ -514,7 +521,7 @@ h1 {
   margin: 0 11px;
   border-radius: 10px;
   overflow: hidden;
-
+  box-shadow: 3px 0px 1px 1px rgb(241 233 176 / 35%);
   margin-right: 15px;
   border: 1px solid #000;
   width: 500px;
@@ -609,7 +616,7 @@ footer {
   display: none;
 }
 
-.checkbox:checked ~ .botton-dark::before {
+.checkbox:checked~.botton-dark::before {
   transform: translateX(0);
 }
 
@@ -651,19 +658,15 @@ footer {
 
   --colorHeader: #000;
   --gray: gray;
-  --botoDark: linear-gradient(
-    90deg,
-    rgba(255, 180, 0, 0.76) 15.4%,
-    rgba(255, 231, 106, 0.9) 49.63%
-  );
+  --botoDark: linear-gradient(90deg,
+      rgba(255, 180, 0, 0.76) 15.4%,
+      rgba(255, 231, 106, 0.9) 49.63%);
   --color: #000;
   --fondo: rgba(255, 255, 255, 0.6);
-  --dark: linear-gradient(
-    90deg,
-    #24221f 13.38%,
-    rgba(40, 42, 46, 0.6) 52.24%,
-    #615175 90.03%
-  );
+  --dark: linear-gradient(90deg,
+      #24221f 13.38%,
+      rgba(40, 42, 46, 0.6) 52.24%,
+      #615175 90.03%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -672,10 +675,8 @@ footer {
     --color: #fff;
     --dark: linear-gradient(180deg, #b7b7b7 0%, #ffffff 74.48%);
     --fondo: rgba(0, 0, 0, 0.9);
-    --botoDark: linear-gradient(
-      90deg,
-      rgba(255, 180, 0, 0.76) 15.4%,
-      rgba(255, 231, 106, 0.9) 49.63%
-    );
+    --botoDark: linear-gradient(90deg,
+        rgba(255, 180, 0, 0.76) 15.4%,
+        rgba(255, 231, 106, 0.9) 49.63%);
   }
 }
