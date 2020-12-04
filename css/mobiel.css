@@ -33,7 +33,7 @@ body {
       #76757d 70.06%,
       rgba(174, 171, 163, 0.88) 94.35%,
       #b0b1b3 110%);
-  --items: #2e8eff;
+  --items: #ffb400;
 }
 
 .container {
@@ -105,7 +105,10 @@ header ul li a {
 .hero {
   height: 90vh;
   width: 100%;
-  padding: 160px 30px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero__hi {
@@ -115,6 +118,7 @@ header ul li a {
 h1 {
   font-size: 3.8rem;
   padding: 10px 0;
+  margin-left: 10px;
   font-weight: 900;
 }
 
@@ -248,22 +252,25 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px 0;
+  margin: 35px 0;
 }
 
 .experience__articles-img img {
-  margin-right: 25px;
-  widows: 60px;
-  height: 60px;
+  margin-right: 15px;
+  width: 90px;
+  height: 90px;
 }
 
+
+
 .experience__article-mas img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .experience__articles-text p {
   font-size: 1.8rem;
+  margin: -15px 0;
 }
 
 .experience__articles-text span {
@@ -537,7 +544,7 @@ h1 {
 .learning__course-article h3,
 p,
 span {
-  padding: 10px;
+  padding: 6px;
 }
 
 .learning__course-article p {
