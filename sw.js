@@ -1,6 +1,6 @@
 const CACHE_NAME = 'v1_cache_DanielSuarezDev',
   urlsToCache = [
-    '/',
+    './',
     '/index.html',
     '/js/app.js',
     '/js/form.js',
