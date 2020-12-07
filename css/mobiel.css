@@ -474,6 +474,12 @@ h1 {
   margin: 20px auto;
 }
 
+.recomendacion__articles-target a img {
+  width: 24px;
+  height: 54px;
+  margin-left: 15px;
+}
+
 .recomendacion__articles figure {
   display: flex;
   margin-bottom: 10px;
