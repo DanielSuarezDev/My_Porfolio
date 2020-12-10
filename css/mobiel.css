@@ -633,7 +633,7 @@ footer {
 
 .checkbox:checked ~ .botton-dark::before {
   transform: translateX(0);
-  background-image: url("../images/icons/sun.svg");
+  background-image: url("../images/icons/soli.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 27px;
