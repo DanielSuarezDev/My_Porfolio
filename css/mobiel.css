@@ -656,7 +656,7 @@ footer {
 .botton-dark::before {
   content: "";
   display: block;
-  background-image: url("../images/icons/sun.svg");
+  background-image: url("../images/icons/luna.svg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background: var(--botoDark); */
