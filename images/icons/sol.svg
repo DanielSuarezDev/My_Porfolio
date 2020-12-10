@@ -1,7 +1,6 @@
-<svg width="69" height="65" viewBox="0 0 69 65" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<ellipse cx="34.5" cy="32.5" rx="34.5" ry="32.5" fill="#FFB400"/>
-<ellipse cx="34.5" cy="32.5" rx="33.5" ry="31.5" fill="#E0E0E0"/>
-<path d="M15 50.66H53V12.66H15V50.66Z" fill="url(#pattern0)"/>
+<svg width="67" height="63" viewBox="0 0 67 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<ellipse cx="33.5" cy="31.5" rx="33.5" ry="31.5" fill="#E3E3E3"/>
+<path d="M15 48.52H51V12.52L15 12.52L15 48.52Z" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.015625)"/>
