@@ -603,6 +603,53 @@ span {
   height: 20px;
   margin-left: 5px;
 }
+/****************************MENTORIAS**************************/
+
+.mentori {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.mentori p {
+  font-size: 1.7rem;
+}
+
+.mentori img {
+  width: 300px;
+  margin-bottom: 35px;
+} 
+.mentori__img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.mentori__img img {
+  width: 60px;
+  height: 40px;
+}
+
+.sponsor-contain {
+  display: flex;
+  align-items: center;
+  background-color: #FF005C;
+  width: 60%;
+  margin: 8px auto;
+  border-radius: 8px;
+  padding: 5px 0 5px 20px;
+}
+.sponsor-contain a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+}
+.sponsor-contain img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
 
 /****************************FORMULARIO**************************/
 .form {
