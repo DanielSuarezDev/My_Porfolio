@@ -30,6 +30,15 @@
  .learning__description {
    font-size: 2rem;
  }
+ .project__description-p {
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+ .project__description-p img {
+  width: 50%;
+  margin-right: 15px;
+}
 
  .services__articles,
  .container_course,

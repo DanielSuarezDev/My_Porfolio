@@ -37,29 +37,32 @@
 
 <body>
   <div id="particles-js"></div>
-  <header>
+
+  <div class="icon-menu">
+    <img src="./images/icons/navBar/menu.svg" alt="menu" id="icon-menu">
+  </div>
+
+
+  <header class="menu active" id="menu">
     <ul>
-      <li class="active" data-url="about">
+      <li data-url="about">
         <a href="#about">
-          <img src="images/icons/about.svg" alt="Acerca de mi" /> Acerca</a>
+          <img src="images/icons/navBar/Acerca.svg" alt="Acerca de mi" />
+           Acerca</a>
       </li>
-      <li class="active" data-url="skill">
-        <a href="#skills">
-          <img src="images/icons/skill.svg" alt="Mis habilidades" /> Habilidades</a>
-      </li>
-      <li class="active" data-url="projects">
+      <li  data-url="projects">
         <a href="#projects">
-          <img src="images/icons/project.svg" alt="Mis proyectos" /> Proyectos</a>
+          <img src="images/icons/navBar/Proyectos.svg" alt="Mis proyectos" /> 
+          Proyectos</a>
       </li>
-      <li class="active" data-url="learning">
+      <li  data-url="learning">
         <a href="#learnind">
-          <img src="images/icons/learning.svg" alt="Coach" /> Mentorias</a>
+          <img src="images/icons/navBar/Mentorias.svg" alt="Coach" />
+           Mentorias</a>
       </li>
-      <li class="active" data-url="contact">
-        <a href="#contact"> <img src="images/icons/contac.svg" alt="Contacto" /> Contacto</a>
-      </li>
-      <li class="active" data-url="blog">
-        <a href="#"> <img src="images/icons/blog.svg" alt="Mi Blog" /> Blog</a>
+      <li  data-url="contact">
+        <a href="#contact"> <img src="images/icons/navBar/Contacto.svg" alt="Contacto" /> 
+          Contacto</a>
       </li>
       <div class="animations start-home"></div>
     </ul>
@@ -69,13 +72,13 @@
     <section class="dark__mode">
       <p class="dark__mode-text"></p>
       <input type="checkbox" class="checkbox" id="checkbox" />
-      <label class="botton-dark" for="checkbox">Mode </label>
+      <label class="botton-dark" for="checkbox"></label>
     </section>
     <section class="hero">
-      <p class="hero__hi">Hola soy,</p>
+      <p class="hero__hi">Hola 👋 soy,</p>
       <h2 class="DanielSuarez">Daniel Suarez.</h2>
-      <div class="hero__description">
-        <p>Front End Developer. . <span>&#160;</span></p>
+      <div class="hero__hi">
+        <p>Software Engineer</p>
       </div>
     </section>
     <section class="about section" id="about">
@@ -93,13 +96,12 @@
                 <p class="infor__city">Bogotá - Colombia</p>
                 <img src="./images/icons/colombia.svg" alt="" />
               </div>
-              <h1 class="info__profession">Frontend Developer - Educator</h1>
+              <h1 class="info__profession">Software Engineer in</h1>
             </div>
           </div>
           <div class="text">
             <p class="text__detail">
-              Frontend Developer, apasionado por la tecnología, autodidacta y persistente en entregar lo mejor para el
-              cliente. Me destaco por mis habilidades progresivas con enfoque al desarrollo de las empresas, además cuento con una capacidad de adaptarme a los diferentes entornos.
+              Hola 👋 soy frontend developer apasionado por la programación y con un espiritu que nunca para de aprender.<br><br>He trabajado con varias tecnologías como:<span>React, React Native, Node,Sql, html, css, Javascript, responsive design, preprocesadores, figma</span>creando proyectos increibles y aportando a la comunidad y lo mejor 😜 sigo aprendiendo cosas nuevas.<br><br>Tambien me gusta aportar conocimiento y es por eso que me volvi creador de contenido donde enseño sobre mi experiencia 🚀.
             </p>
           </div>
           <div class="redes">
@@ -115,273 +117,52 @@
               <img src="./images/icons/linkedin.svg" alt="" class="redes__social" />
             </a>
           </div>
-      </div>
-      <!-- </section> -->
-      <section class="services">
-        <div class="container">
-
-          <h2 class="items">
-            Mis Servicios
-            <!-- <i><img src="./images/icons/arrowwidht.svg" alt=""/></i> -->
-          </h2>
-        </div>
-        <div class="services__articles">
-          <article class="services__card">
-            <img src="./images/icons/maquetacion.svg" alt="" />
-            <span>Maquetación Web</span>
-          </article>
-          <article class="services__card">
-            <img src="./images/icons/medida.svg" alt="" />
-            <span>Desarrollo a medida</span>
-          </article>
-          <article class="services__card">
-            <img src="./images/icons/seo.svg" alt="" />
-            <span>Seo</span>
-          </article>
-          <article class="services__card">
-            <img src="./images/icons/analitic.svg" alt="" />
-            <span>Analitycs</span>
-          </article>
-          <article class="services__card">
-            <img src="./images/icons/automatizacion.svg" alt="" />
-            <span>Automatización</span>
-          </article>
-          <article class="services__card">
-            <img src="./images/icons/deploy.svg" alt="" />
-            <span>Dominio & Hosting</span>
-          </article>
-          <article class="services__card">
-            <img src="./images/icons/accesibilidad.svg" alt="" />
-            <span>Accesibilidad Web</span>
-          </article>
-        </div>
-      </section>
-      <section class="experience container">
-
-        <h2 class="items">Mi Experiencia</h2>
-        <div class="deskopt">
-          <article class="experience__articles">
-            <figure class="experience__articles-img">
-              <img src="./images/icons/experience.svg" alt="" />
-            </figure>
-            <div class="experience__article-mas">
-              <img src="./images/icons/mas.svg" alt="" />
-            </div>
-            <div class="experience__articles-text">
-              <p>DE <span>5</span></p>
-              <p>Años de Experiencia</p>
-            </div>
-          </article>
-          <article class="experience__articles">
-            <figure class="experience__articles-img">
-              <img src="./images/icons/clientes.svg" alt="" />
-            </figure>
-            <div class="experience__article-mas">
-              <img src="./images/icons/mas.svg" alt="" />
-            </div>
-            <div class="experience__articles-text">
-              <p>DE <span>50</span></p>
-              <p>Clientes Satisfechos</p>
-            </div>
-          </article>
-          <article class="experience__articles">
-            <figure class="experience__articles-img">
-              <img src="./images/icons/presencia.svg" alt="" />
-            </figure>
-            <div class="experience__article-mas">
-              <img src="./images/icons/mas.svg" alt="" />
-            </div>
-            <div class="experience__articles-text">
-              <p>DE <span>3</span></p>
-              <p>Paises en presencia</p>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="estuding">
-        <div class="container">
-
-          <h2 class="items">
-            Mis estudios
-            <!-- <i><img src="./images/icons/arrowwidht.svg" alt=""/></i> -->
-          </h2>
-          <p class="misEstudios">Conoce el desarrollo de mis competencias, cada día trato de mejorar mis habilidades como desarrollador web y siempre estoy en la busqueda de actualizar mis conocimientos de acuerdo a los cambios tecnológicos.</a>
-        </div>
-        <div class="container_course">
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/jsbasic.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>javaScript Básico</h3>
-              <!-- <p>Platzi</p> -->
-            </div>
-            <!--  <div class="botonVer">
-                  <a href="#">Ver</a>
-                </div> -->
-          </article>
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/cssgrid.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>Css Grid</h3>
-              <!-- <p>Platzi</p> -->
-            </div>
-
-          </article>
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/htmlDefinitivo.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>Html</h3>
-              <!-- <p>Platzi</p> -->
-            </div>
-
-          </article>
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/responsive.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>Responsive Desing</h3>
-              <!-- <p>Platzi</p> -->
-            </div>
-
-          </article>
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/clouseryscopejs.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>Clouser y Scope</h3>
-              <!-- <p>Platzi</p> -->
-            </div>
-
-          </article>
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/debuggin.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>Debbugin</h3>
-              <!-- <p>Platzi</p> -->
-            </div>
-
-          </article>
-
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/ecma.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>EcmaScript</h3>
-              <!-- <p>Platzi</p> -->
-            </div>
-
-          </article>
-
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/SistemaDiseño.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>Sistema de Diseño</h3>
-              <!-- <p>Platzi</p> -->
-            </div>
-
-          </article>
-
-          <article class="estuding__course">
-            <figure class="estuding__course-img">
-              <img src="./images/icons/cursos/v8.svg" alt="" />
-            </figure>
-            <div class="estuding__course-detail">
-              <h3>v8</h3>
-      <!--         <p>Platzi</p> -->
-            </div>
-          </article>
-        </div>
-      </section>
+       </div>
       </div>
     </section>
 
-    <section class="skills" id="skills">
+    <section class="recomendacion container">
       <div class="container">
-        <h2 class="subtitle">Mis Habilidades</h2>
+        <h2 class="items">Recomendaciones</h2>
+
       </div>
+      <div class="recomendacion__articles">
+        <article class="recomendacion__articles-target">
+          <figure>
+            <img src="./images/images/mao.jpg" alt="">
+            <p class="cliente">Mauricio Beltrán <br> Mercadólogo</p>
+            <i><a href="https://www.linkedin.com/in/mauricio-a-beltrán-s-5b877034" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
+          </figure>
+          <p>He tenido la gran fortuna de trabajar en diferentes proyectos con Daniel. Persona que se destaca por su excelente
+          gestión y atención al detalle de cada uno de sus clientes, sin dejar de lado su don de servicio, el cual siempre está
+          orientado a los resultados en función de sus clientes; el portafolio que maneja se enfoca en minimizar los riesgos que
+          una compañía puede estar expuesta, adicional, apalanca el crecimiento y desarrollo de su marca.
+          <br><br>
+          Daniel, enhorabuena mis mejores deseos.</p>
+        </article>
 
-      <section class="coding">
-        <div class="coding__title">
-          <div class="container">
+        <article class="recomendacion__articles-target">
+          <figure>
+            <img src="./images/images/martha.jpg" alt="">
+            <p class="cliente">Martha Lucia Gonzalez<br>Jefe Operativa BBVA</p>
+            <i><a href="https://www.linkedin.com/in/martha-lucia-gonzalez-cely-abb03078/" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
+          </figure>
+          <p>Durante los años en los que trabaje con Daniel siempre figuro por su capacidad para sacar adelante los temas y proyectos asignados, utiliza muy bien los recursos y los potencializa. Recomendaria a Daniel por su capacidad y talento.
+          <br></p>
+        </article>
 
-            <h2 class="items">
-              <!-- <i><img src="./images/icons/arrowwidht.svg" alt=""/></i> -->
-            </h2>
-          </div>
-        </div>
-        <div class="skill__container">
-          <article class="coding__article">
-            <img src="./images/icons/html.svg" alt="" />
-            <p>HTML5</p>
-          </article>
-
-          <article class="coding__article">
-            <img src="./images/icons/css.svg" alt="" />
-            <p>CSS3</p>
-          </article>
-
-          <article class="coding__article">
-            <img src="./images/icons/js.svg" alt="" />
-            <p>JAVASCRIPT</p>
-          </article>
-
-          <article class="coding__article">
-            <img src="./images/icons/react.svg" alt="" />
-            <p>React</p>
-          </article>
-          
-          <article class="coding__article">
-            <img src="./images/icons/excel.svg" alt="" />
-            <p>Excel (macros)</p>
-          </article>
-
-          <article class="coding__article">
-            <img src="./images/icons/sass.svg" alt="" />
-            <p>SASS</p>
-          </article>
-
-          <article class="coding__article">
-            <img src="./images/icons/figma.svg" alt="" />
-            <p>FIGMA</p>
-          </article>
-
-          <article class="coding__article">
-            <img src="./images/icons/git.svg" alt="" />
-            <p>GIT</p>
-          </article>
-
-          <article class="coding__article">
-            <img src="./images/icons/github.svg" alt="" />
-            <p>GITHUB</p>
-          </article>
-        </div>
-      </section>
-      <section class="lenguages container">
-        <h2 class="items">Idiomas</h2>
-
-        <div class="leng1">
-          <img src="./images/icons/espaniol.svg" alt="" />
-          <p>Español Nativo</p>
-        </div>
-        <div class="leng1">
-          <img src="./images/icons/ingles.svg" alt="" />
-          <p>Inglés Básico (A2)</p>
-        </div>
-      </section>
-
+         <article class="recomendacion__articles-target">
+          <figure>
+            <img src="./images/images/deygerson.jpg" alt="">
+            <p class="cliente">Deygerson Mpendez<br>System Analyst</p>
+            <i><a href="https://www.linkedin.com/in/deygerson-mendez/" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
+          </figure>
+          <p>Daniel es excelente profesional, en el área de desarrollo web. De igual forma, es una persona carismática y siempre dispuesto a ayudar, trabajando de forma colaborativa en equipo, además de enseñar sus conocimientos..
+          <br></p>
+        </article>
+      </div>
     </section>
+
 
     <section class="proyectos" id="projects">
       <div class="container">
@@ -391,10 +172,11 @@
         </h2>
 
         <div class="project__description-p">
+          <img src="./images/icons/pryects.svg" alt="">
           <p>
-            He tenido la oportunidad de trabajar con personas increibles y empresas sorprendentes, donde la mayor
-            satisfacción es ver que sus expectativas se cumplen al máximo, te invito a mirar los proyectos que he
-            realizado.
+            Para mi es un honor mostrar proyectos personales como profesionales 🎉 y cada día añadiendo tecnologías nuevas a mis skills, espero te gusten.
+            <br><br>
+            Si te intereza realizar un proyecto conmigo solo escribeme 😜
           </p>
         </div>
       </div>
@@ -403,208 +185,60 @@
         <article class="project_article">
           <div class="project__title">
             <h2 class="title_proyectos">
-              Curso EDteam
-              <i><img src="./images/icons/colombia.svg" alt="" /></i>
+              JournalApp
             </h2>
             <figure class="project__screenshots">
-              <img src="./images/images/DeployEDteam.png" alt="" />
+              <img src="./images/images/Proyects/journalApp.svg" alt="" />
             </figure>
-            <p>Despliega tus sitios Web</p>
-            <small>Github-Vercel-Netlify-Surge</small>
+            <small>React - Redux - Firebase - Router</small>
             <div class="project__boton">
-              <a href="https://ed.team/cursos/deploy-web" target="_blank" rel="noopener">Visitar</a>
+              <a href="https://journal-app-hhxrge97q-danielsuarezdev.vercel.app/auth/login" target="_blank" rel="noopener">Visitar</a>
             </div>
           </div>
         </article>
-
         <article class="project_article">
           <div class="project__title">
             <h2 class="title_proyectos">
-              SPA
-              <i><img src="./images/icons/colombia.svg" alt="" /></i>
+              GifExpert
             </h2>
             <figure class="project__screenshots">
-              <img src="./images/images/rickandmorty.png" alt="" />
+              <img src="./images/images/Proyects/gifExpert.svg" alt="" />
             </figure>
-            <p>Rick And Morty</p>
-            <small>React</small>
+            <small>React - Api - Axios</small>
             <div class="project__boton">
-              <a href="https://danielsuarezdev.github.io/rick.and.morty-spa/" target="_blank" rel="noopener">Visitar</a>
+              <a href="https://gif-expert-sigma.vercel.app/" target="_blank" rel="noopener">Visitar</a>
             </div>
           </div>
         </article>
-
         <article class="project_article">
           <div class="project__title">
             <h2 class="title_proyectos">
-              Bata Bit
-              <i><img src="./images/icons/colombia.svg" alt="" /></i>
+              BataBit
             </h2>
             <figure class="project__screenshots">
-              <img src="./images/images/batabit.png" alt="" />
+              <img src="./images/images/Proyects/batabit.svg" alt="" />
             </figure>
-            <p>Criptomonedas</p>
-            <small>css - html </small>
+            <small>Html - Css</small>
             <div class="project__boton">
               <a href="https://bata-bit.vercel.app/" target="_blank" rel="noopener">Visitar</a>
             </div>
           </div>
         </article>
-
         <article class="project_article">
           <div class="project__title">
             <h2 class="title_proyectos">
-              Colegio
-              <i><img src="./images/icons/puerto-rico.svg" alt="" /></i>
+              SimonDice
             </h2>
             <figure class="project__screenshots">
-              <img src="./images/images/cub.png" alt="" />
+              <img src="./images/images/Proyects/simonDice.svg" alt="" />
             </figure>
-            <p>Plataforma Educativa</p>
-            <small>css - html - JavaScript</small>
+            <small>JavaScript</small>
             <div class="project__boton">
-              <a href="https://cub-hazel.vercel.app/" target="_blank" rel="noopener">Visitar</a>
+              <a href="https://simon-dice-ivory.vercel.app/" target="_blank" rel="noopener">Visitar</a>
             </div>
           </div>
         </article>
-
-        <article class="project_article">
-          <div class="project__title">
-            <h2 class="title_proyectos">
-              Gas Latino
-              <i><img src="./images/icons/colombia.svg" alt="" /></i>
-            </h2>
-            <figure class="project__screenshots">
-              <img src="./images/images/gaslatino.png" alt="" />
-            </figure>
-            <p>Empresa de gas</p>
-            <small>css - html - JavaScript</small>
-            <div class="project__boton">
-              <a href="https://gaslatinocomercializadora.vercel.app/" target="_blank" rel="noopener">Visitar</a>
-            </div>
-          </div>
-        </article>
-
-
-      </div>
-
-      <section class="clients__container">
-        <div class="container">
-
-          <h2 class="items">Nuestros Clientes</h2>
-        </div>
-        <marquee behavior="" direction="">
-        <div class="clients">
-          <article class="clients__log">
-            <figure>
-              <img src="./images/images/logoEDteam.png" alt="">
-            </figure>
-            <!-- <span>CSF - BBVA</span> -->
-          </article>
-
-          <article class="clients__log">
-            <figure>
-              <img src="./images/images/patata.svg" alt="">
-            </figure>
-            <!-- <span>CSF - BBVA</span> -->
-          </article>
-
-          <article class="clients__log">
-            <figure>
-              <img src="./images/images/cub.webp" alt="">
-            </figure>
-            <!--  <span>CSF - BBVA</span> -->
-          </article>
-
-
-          <article class="clients__log">
-            <figure>
-              <img src="./images/images/csf.jpg" alt="">
-            </figure>
-            <!-- <span>CSF - BBVA</span> -->
-          </article>
-
-          <article class="clients__log">
-            <figure>
-              <img src="./images/images/gaslatino.jpg" alt="">
-            </figure>
-            <!-- <span>CSF - BBVA</span> -->
-          </article>
-
-
-          <article class="clients__log">
-            <figure>
-              <img src="./images/images/siempreNinos.png" alt="">
-            </figure>
-            <!-- <span>CSF - BBVA</span> -->
-          </article>
-        </div>
-        </marquee>
-      </section>
-
-      <section class="recomendacion container">
-        <div class="container">
-          <h2 class="items">Recomendaciones</h2>
-
-        </div>
-        <div class="recomendacion__articles">
-          <article class="recomendacion__articles-target">
-            <figure>
-              <img src="./images/images/mao.jpg" alt="">
-              <p class="cliente">Mauricio Beltrán <br> Mercadólogo</p>
-              <i><a href="https://www.linkedin.com/in/mauricio-a-beltrán-s-5b877034" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
-            </figure>
-            <p>He tenido la gran fortuna de trabajar en diferentes proyectos con Daniel. Persona que se destaca por su excelente
-            gestión y atención al detalle de cada uno de sus clientes, sin dejar de lado su don de servicio, el cual siempre está
-            orientado a los resultados en función de sus clientes; el portafolio que maneja se enfoca en minimizar los riesgos que
-            una compañía puede estar expuesta, adicional, apalanca el crecimiento y desarrollo de su marca.
-            <br><br>
-            Daniel, enhorabuena mis mejores deseos.</p>
-          </article>
-
-          <article class="recomendacion__articles-target">
-            <figure>
-              <img src="https://media-exp1.licdn.com/dms/image/C5603AQFdaoi2hjxaTg/profile-displayphoto-shrink_800_800/0/1602010577349?e=1617840000&v=beta&t=X6iu8wlGiwn1JBJRgUav955gVr8pfg5vR6e1pOfU_IM" alt="">
-              <p class="cliente">Martha Lucia Gonzalez<br>Jefe Operativa BBVA</p>
-              <i><a href="https://www.linkedin.com/in/martha-lucia-gonzalez-cely-abb03078/" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
-            </figure>
-            <p>Durante los años en los que trabaje con Daniel siempre figuro por su capacidad para sacar adelante los temas y proyectos asignados, utiliza muy bien los recursos y los potencializa. Recomendaria a Daniel por su capacidad y talento.
-            <br></p>
-          </article>
-
-           <article class="recomendacion__articles-target">
-            <figure>
-              <img src="https://media-exp1.licdn.com/dms/image/C4E35AQGpZFztOftE3Q/profile-framedphoto-shrink_800_800/0/1610859270157?e=1612321200&v=beta&t=PE6wdMkCMO0-edCKthRD7TqVWQX--duWYq9xDY2v_tU" alt="">
-              <p class="cliente">Deygerson Mpendez<br>System Analyst</p>
-              <i><a href="https://www.linkedin.com/in/deygerson-mendez/" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
-            </figure>
-            <p>Daniel es excelente profesional, en el área de desarrollo web. De igual forma, es una persona carismática y siempre dispuesto a ayudar, trabajando de forma colaborativa en equipo, además de enseñar sus conocimientos..
-            <br></p>
-          </article>
-
-         <!--  <article class="recomendacion__articles-target">
-            <figure>
-              <img src="./images/images/profile.jpg" alt="">
-              <p class="cliente">Daniel Suarez <br> Comunnity Manager </p>
-            </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet fugiat laudantium, eius aliquid
-              accusamus,
-              tenetur officiis dolorum nesciunt in, aperiam sapiente deleniti doloribus. Dolores sequi deserunt ullam
-              nemo at!</p>
-          </article>
-
-          <article class="recomendacion__articles-target">
-            <figure>
-              <img src="./images/images/profile.jpg" alt="">
-              <p class="cliente">Daniel Suarez <br> Comunnity Manager </p>
-            </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet fugiat laudantium, eius aliquid
-              accusamus,
-              tenetur officiis dolorum nesciunt in, aperiam sapiente deleniti doloribus. Dolores sequi deserunt ullam
-              nemo at!</p>
-          </article> -->
-        </div>
-      </section>
+      </div> 
 
     </section>
 

@@ -33,3 +33,21 @@ function mostrar() {
 }
 
 window.addEventListener('scroll', mostrar);
+
+
+const iconMenu = document.querySelector('#icon-menu')
+ menu = document.querySelector('#menu') 
+
+iconMenu.addEventListener('click', (e) => {
+  // alteramos el estilo para el menu y body
+  menu.classList.toggle('active')
+  document.body.classList.toggle('opacity')
+  // alteramos el atribute src para el icono del menu
+  const ruteAcutal = e.target.getAttribute('src')
+
+  if(ruteAcutal === 'images/icons/navBar/delete.svg'){
+    e.target.setAttribute('src', 'images/icons/navBar/menu.svg')  
+  }else {
+    e.target.setAttribute('src', 'images/icons/navBar/delete.svg')
+  }
+})
