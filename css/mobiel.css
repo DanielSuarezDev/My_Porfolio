@@ -156,6 +156,28 @@ body {
   font-size: 2rem;
   font-weight: 200;
 }
+.wrapper {
+  place-items: center;
+}
+.wrapper-effect{
+  width: 17ch;
+  font-size: 2rem;
+  animation: typing 2s steps(17), blink 0.3s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right:3px solid ;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
 .DanielSuarez {
   font-size: 3.8rem;
