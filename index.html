@@ -1,345 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Daniel Suarez</title>
+    <meta
+      content="Frontend Developer | freelancer | tutor | react | javascript | html | css | nodejs | sql"
+    />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3978103295572026"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#FFB800" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, react, react native, frontende veloper, nodejs, sql, freelancer, instructor, treinta, responsive design"
+    />
+    <meta name="author" content="Daniel Suarez" />
+    <meta name="description" content="Frontend developer en treinta" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/icons/favicon.svg"
+    />
+    <link rel="apple-touch-icon" href="images/icons/favicon.svg" />
+    <link rel="apple-touch-startup-image" href="images/icons/favicon.svg" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)" />
+    <link
+      rel="stylesheet"
+      href="./css/deskopt.css"
+      media="(min-width:1024px)"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Daniel Suarez</title>
-  <meta content="Frontend Developer | freelancer | tutor | react | javascript | html | css | nodejs | sql">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3978103295572026"
-     crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap" rel="stylesheet" />
-  <meta name="theme-color" content="#FFB800" />
-  <meta name="keywords" content="HTML, CSS, JavaScript, react, react native, frontende veloper, nodejs, sql, freelancer, instructor, treinta, responsive design">
-  <meta name="author" content="Daniel Suarez">
-  <meta name="description" content="Frontend developer en treinta">
-  <meta name="MobileOptimized" content="width" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="shortcut icon" type="image/png" href="images/icons/favicon.svg" />
-  <link rel="apple-touch-icon" href="images/icons/favicon.svg" />
-  <link rel="apple-touch-startup-image" href="images/icons/favicon.svg" />
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="stylesheet" href="./css/mobiel.css" />
-  <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)">
-  <link rel="stylesheet" href="./css/deskopt.css" media="(min-width:1024px)">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RVW35C2YHG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVW35C2YHG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag("config", "G-RVW35C2YHG");
+    </script>
+  </head>
 
-    gtag('config', 'G-RVW35C2YHG');
-  </script>
-</head>
-
-<body>
-  <div id="particles-js"></div>
-
-  <div class="icon-menu">
-    <img src="./images/icons/navBar/menu.svg" alt="menu" id="icon-menu">
-  </div>
-
-
-  <header class="menu active" id="menu">
-    <ul>
-      <li data-url="about">
-        <a href="#about">
-          <img src="images/icons/navBar/Acerca.svg" alt="Acerca de mi" />
-           Acerca</a>
-      </li>
-      <li  data-url="projects">
-        <a href="#projects">
-          <img src="images/icons/navBar/Proyectos.svg" alt="Mis proyectos" /> 
-          Proyectos</a>
-      </li>
-      <li  data-url="learning">
-        <a href="#learnind">
-          <img src="images/icons/navBar/Mentorias.svg" alt="Coach" />
-           Mentorias</a>
-      </li>
-      <li  data-url="contact">
-        <a href="#contact"> <img src="images/icons/navBar/Contacto.svg" alt="Contacto" /> 
-          Contacto</a>
-      </li>
-      <div class="animations start-home"></div>
-    </ul>
-
-    <div class="">
-      <div class="sponsor-contain">
-        <a href="https://mis.fans/danielsuarezdev/regalo" target="_blank">
-          <img src="./images/images/Mentorias/cafe.svg" alt="">
-          <h2>Invitame un Café</h2>
-        </a>
+  <body>
+    <nav class="header">
+      <i><img src="./images/icons/header/Vector.svg" alt="" /></i>
+      <div class="header-social">
+        <i
+          ><a href="#"><img src="./images/icons/header/spotify.svg" alt="" /></a
+        ></i>
+        <i
+          ><a href="#"><img src="./images/icons/header/github.svg" alt="" /></a
+        ></i>
+        <i
+          ><a href="#"
+            ><img src="./images/icons/header/instagram.svg" alt="" /></a
+        ></i>
+        <i
+          ><a href="#"
+            ><img src="./images/icons/header/linkedin.svg" alt="" /></a
+        ></i>
+        <i
+          ><a href="#"><img src="./images/icons/header/youtube.svg" alt="" /></a
+        ></i>
+        <i
+          ><a href="#"><img src="./images/icons/header/discord.svg" alt="" /></a
+        ></i>
+        <i
+          ><a href="#"><img src="./images/icons/header/twitch.svg" alt="" /></a
+        ></i>
+        <i
+          ><a href="#"><img src="./images/icons/header/twitter.svg" alt="" /></a
+        ></i>
       </div>
-      <div class="sponsor-contain">
-        <a href="https://mis.fans/danielsuarezdev/pregunta" target="_blank">
-          <img src="./images/images/Mentorias/pregunta.svg" alt="">
-          <h2>Hazme una pregunta</h2>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main class="">
-    <section class="dark__mode">
-      <p class="dark__mode-text"></p>
-      <input type="checkbox" class="checkbox" id="checkbox" />
-      <label class="botton-dark" for="checkbox"></label>
-    </section>
-    <section class="hero">
-      <p class="hero__hi">Hola 👋 soy,</p>
-      <h1 class="DanielSuarez">Daniel Suarez.</h1>
-      <div class="wrapper">
-        <div class="wrapper-effect">Software Engineer</div>
-      </div>
-    </section>
-    <section class="about section" id="about">
-      <div class="container">
-        <h2 class="subtitle">Acerca de mi</h2>
-        <div class="linea"></div>
-        <section>
-          <div class="info">
-            <figure class="info_profile">
-              <img src="./images/images/profile.jpg" alt="" />
-            </figure>
-            <div class="">
-              <h2 class="info__title">Daniel Suarez</h2>
-              <div class="city-pais">
-                <p class="infor__city">Bogotá - Colombia</p>
-                <img src="./images/icons/colombia.svg" alt="" />
-              </div>
-              <h2 class="info__profession">Software Engineer in Treinta</h2>
-            </div>
+    </nav>
+    <!-- ******************* -->
+    <main class="container">
+      <div class="hero">
+        <div class="last-stream">
+          <div class="last-stream--img">
+            <img src="./images/images/streams/last.png" alt="last-stream" />
           </div>
-          <div class="text">
-            <p class="text__detail">
-              Hola 👋 soy frontend developer apasionado por la programación y con un espiritu que nunca para de aprender.<br><br>He trabajado con varias tecnologías como:<span>REACT, REACT NATIVE, NODE, SQL, HTML, CSS, JAVASCRIPT, PREPROCESADORES, FIGMA</span>creando proyectos increibles y aportando a la comunidad y lo mejor 😜 sigo aprendiendo cosas nuevas.<br><br>Tambien me gusta aportar conocimiento y es por eso que me volvi creador de contenido donde enseño sobre mi experiencia 🚀.
-            </p>
+          <div class="photo-container">
+            <img src="./images/images/profile_2.png" alt="" />
+            <h4>Daniel Suarez</h4>
+            <a href="https://twitter.com/DanielSuarezDev" target="_blank"
+              ><span>@danielsuarezdev</span></a
+            >
           </div>
-          <div class="redes">
-            <a href="https://github.com/DanielSuarezDev" target="_blank" rel="noopener"><img src="./images/icons/github.svg"
-                alt="Github" class="redes__social" /></a>
-            <a href="https://www.facebook.com/groups/599742427578264" target="_blank" rel="noopener"><img
-                src="./images/icons/facebook.svg" alt="Facebook" class="redes__social" /></a>
-            <a href="https://twitter.com/DanielSuarezDev" target="_blank" rel="noopener"><img src="./images/icons/twitter.svg"
-                alt="Twitter" class="redes__social" /></a>
-            <a href="https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA?view_as=subscriber" target="_blank" rel="noopener"><img
-                src="./images/icons/youtube.svg" alt="Youtube" class="redes__social" /></a>
-            <a href="https://www.linkedin.com/in/daniel-suarez-freelance-frontend-developer" target="_blank" rel="noopener">
-              <img src="./images/icons/linkedin.svg" alt="" class="redes__social" />
-            </a>
-          </div>
-       </div>
+        </div>
       </div>
-    </section>
 
-    <section class="recomendacion container">
-      <div class="container">
-        <h2 class="items">Recomendaciones</h2>
-
-      </div>
-      <div class="recomendacion__articles">
-        <article class="recomendacion__articles-target">
-          <figure>
-            <img src="./images/images/mao.jpg" alt="">
-            <p class="cliente">Mauricio Beltrán <br> Mercadólogo</p>
-            <i><a href="https://www.linkedin.com/in/mauricio-a-beltrán-s-5b877034" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
-          </figure>
-          <p>He tenido la gran fortuna de trabajar en diferentes proyectos con Daniel. Persona que se destaca por su excelente
-          gestión y atención al detalle de cada uno de sus clientes, sin dejar de lado su don de servicio, el cual siempre está
-          orientado a los resultados en función de sus clientes; el portafolio que maneja se enfoca en minimizar los riesgos que
-          una compañía puede estar expuesta, adicional, apalanca el crecimiento y desarrollo de su marca.
-          <br><br>
-          Daniel, enhorabuena mis mejores deseos.</p>
-        </article>
-
-        <article class="recomendacion__articles-target">
-          <figure>
-            <img src="./images/images/martha.jpg" alt="">
-            <p class="cliente">Martha Lucia Gonzalez<br>Jefe Operativa BBVA</p>
-            <i><a href="https://www.linkedin.com/in/martha-lucia-gonzalez-cely-abb03078/" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
-          </figure>
-          <p>Durante los años en los que trabaje con Daniel siempre figuro por su capacidad para sacar adelante los temas y proyectos asignados, utiliza muy bien los recursos y los potencializa. Recomendaria a Daniel por su capacidad y talento.
-          <br></p>
-        </article>
-
-         <article class="recomendacion__articles-target">
-          <figure>
-            <img src="./images/images/deygerson.jpg" alt="">
-            <p class="cliente">Deygerson Mpendez<br>System Analyst</p>
-            <i><a href="https://www.linkedin.com/in/deygerson-mendez/" target="_blank" rel="noopener"><img src="./images/icons/linkedin.svg" alt="linkedin Recomendaciones"  ></a></i>
-          </figure>
-          <p>Daniel es excelente profesional, en el área de desarrollo web. De igual forma, es una persona carismática y siempre dispuesto a ayudar, trabajando de forma colaborativa en equipo, además de enseñar sus conocimientos..
-          <br></p>
-        </article>
-      </div>
-    </section>
-
-
-    <section class="proyectos" id="projects">
-      <div class="container">
-        <h2 class="subtitle">
-          Proyectos
-          <!-- <i><img src="./images/icons/arrowwidht.svg" alt=""/></i> -->
-        </h2>
-
-        <div class="project__description-p">
-          <img src="./images/icons/pryects.svg" alt="">
+      <!-- ******************* -->
+      <section class="info">
+        <section class="info-text">
           <p>
-            Para mi es un honor mostrar proyectos personales como profesionales 🎉 y cada día añadiendo tecnologías nuevas a mis skills, espero te gusten.
-            <br><br>
-            Si te intereza realizar un proyecto conmigo solo escribeme 😜
+            Hola soy 👨🏽‍💻 frontend developer en treinta y 🔥 creador de contenido,
+            donde me encanta enseñar lo que se en estos años de experiencia en
+            el mundo 🌏 dev 🤘🏼. <br /><br />
+            Estoy constantemente activo en mis redes sociales compartiendo
+            contenido y contestando preguntas ❤️.
+            <br /><br />  Hago stream donde programamos y nos divertimos, te
+            dejo los horarios y temas.
           </p>
-        </div>
-      </div>
+        </section>
+        <section class="info-hours">
+          <section class="info-hours--days">
+            <article class="info-hours--details">
+              <h3>Lunes</h3>
+              <p>13:00</p>
+              <i><img src="./images/icons/Ellipse.svg" alt="" /></i>
+              <p>Networking random</p>
+            </article>
+            <article class="info-hours--details">
+              <h3>Martes</h3>
+              <p>19:00</p>
+              <i><img src="./images/icons/Ellipse.svg" alt="" /></i>
+              <p>Javascript | React | html | css</p>
+            </article>
+            <article class="info-hours--details">
+              <h3>Jueves</h3>
+              <p>19:00</p>
+              <i><img src="./images/icons/Ellipse.svg" alt="" /></i>
+              <p>Javascript | React | charlas</p>
+            </article>
+            <article class="info-hours--details">
+              <h3>Viernes</h3>
+              <p>13:00</p>
+              <i><img src="./images/icons/Ellipse.svg" alt="" /></i>
+              <p>Networking random</p>
+            </article>
+          </section>
+          <section class="info-hours-call">
+            <a href="#" class="twitch">
+              <i><img src="./images/icons/header/twitch.svg" alt="" /></i>
+              Añadir recordatorio de stream</a
+            >
+            <a href="#" class="coffe"
+              ><i><img src="./images/icons/coffee.svg" alt="" /></i> Invitame un
+              café</a
+            >
+          </section>
+        </section>
+      </section>
 
-      <div class="container__projects">
-        <article class="project_article">
-          <div class="project__title">
-            <h2 class="title_proyectos">
-              JournalApp
-            </h2>
-            <figure class="project__screenshots">
-              <img src="./images/images/Proyects/journalApp.svg" alt="" />
-            </figure>
-            <small>React - Redux - Firebase - Router</small>
-            <div class="project__boton">
-              <a href="https://journal-app-81eulqjib-danielsuarezdev.vercel.app/auth/login" target="_blank" rel="noopener">Visitar</a>
-            </div>
-          </div>
-        </article>
-        <article class="project_article">
-          <div class="project__title">
-            <h2 class="title_proyectos">
-              GifExpert
-            </h2>
-            <figure class="project__screenshots">
-              <img src="./images/images/Proyects/gifExpert.svg" alt="" />
-            </figure>
-            <small>React - Api - Axios</small>
-            <div class="project__boton">
-              <a href="https://gif-expert-sigma.vercel.app/" target="_blank" rel="noopener">Visitar</a>
-            </div>
-          </div>
-        </article>
-        <article class="project_article">
-          <div class="project__title">
-            <h2 class="title_proyectos">
-              BataBit
-            </h2>
-            <figure class="project__screenshots">
-              <img src="./images/images/Proyects/batabit.svg" alt="" />
-            </figure>
-            <small>Html - Css</small>
-            <div class="project__boton">
-              <a href="https://bata-bit.vercel.app/" target="_blank" rel="noopener">Visitar</a>
-            </div>
-          </div>
-        </article>
-        <article class="project_article">
-          <div class="project__title">
-            <h2 class="title_proyectos">
-              SimonDice
-            </h2>
-            <figure class="project__screenshots">
-              <img src="./images/images/Proyects/simonDice.svg" alt="" />
-            </figure>
-            <small>JavaScript</small>
-            <div class="project__boton">
-              <a href="https://simon-dice-ivory.vercel.app/" target="_blank" rel="noopener">Visitar</a>
-            </div>
-          </div>
-        </article>
-      </div> 
+      <!-- ******************* -->
 
-    </section>
-
-    <section class="Learning" id="learnind">
-      <div class="container">
-        <h2 class="subtitle">Mentorías</h2>
-      </div>
-
-      <div class="container mentori">
-        <img src="./images/images/Mentorias/mentorias.svg" alt="">
-        <p class="learning__description">Si estas interesado en aprender programación puedes contar conmigo ya que tengo varios años de experiencia enseñando a todo tipo de edades 😊 tambien te deje mis canales importantes donde puedes aprender..</p>
-      </div>
-
-      <div class="mentori__img">
-        <a href="https://www.twitch.tv/danielsuarezdev" target="_blank" >
-          <img src="./images/images/Mentorias/twich.svg" alt="">
-        </a>
-        <a href="https://www.youtube.com/c/DANIELSUAREZDEV/videos" target="_blank">
-          <img src="./images/images/Mentorias/youtube.svg" alt="">
-        </a>
-        <a href="https://open.spotify.com/show/0kqcB6xkf5uSXq5DlmS4G4?si=89L6YscvS1OBWzgpenLWyQ&dl_branch=1" target="_blank">
-          <img src="./images/images/Mentorias/spotify.svg" alt="">
-        </a>
-      </div>
-
-      <div class="sponsor">
-        <div class="sponsor-contain">
-          <a href="https://mis.fans/danielsuarezdev/regalo" target="_blank">
-            <img src="./images/images/Mentorias/cafe.svg" alt="">
-            <h2>Invitame un Café</h2>
-          </a>
-        </div>
-        <div class="sponsor-contain">
-          <a href="https://mis.fans/danielsuarezdev/pregunta" target="_blank">
-            <img src="./images/images/Mentorias/pregunta.svg" alt="">
-            <h2>Hazme una pregunta</h2>
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <img src="" alt="">
-      </div>
-    </section>
-
-
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="subtitle">Contáctame</h2>
-      </div>
-      <div class="linea container"></div>
-      <form action="" class="form">
-
-        <label for="name" class="label__title">Nombre</label>
-        <input type="text" placeholder="Escribe tu nombre" id="name" class="input__form">
-
-
-        <label for="email" class="label__title">Email</label>
-        <input type="email" placeholder="Dejame tu email" id="email" class="input__form">
-
-
-        <label for="comments" class="label__title">Comentario</label>
-        <input type="text" placeholder="¿Que quieres decirme?" id="comments" class="input__form">
-        <div id="respuesta" class="alert"></div>
-
-        <button id="submit" class="botonEnviar">Enviar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer></footer>
-
-  <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
-  <script src="./script.js"></script>
-  <script src="./js/particles.js"></script>
-  <script src="./js/particulas.js"></script>
-  <script src="./js/app.js"></script>
-  <script src="./js/form.js"></script>
-
-</body>
-
+      <section class="comunity">
+        <h3>Comunidad</h3>
+        <p>
+          Te dejo opciones donde puedes unirte y compartir, pregnutar, aportar o
+          apoyar en la comunidad, dale sin miedo 🤘🏼 que esta comunidad no es
+          toxica.
+        </p>
+        <section class="comunity-card">
+          <article class="comunity-card--item discord">
+            <h4>Discord</h4>
+            <img src="./images/images/comunity.png" alt="" />
+            <span>60 devs</span>
+            <a href="#">Unirme</a>
+          </article>
+          <article class="comunity-card--item twitch">
+            <h4>Twitch</h4>
+            <img src="./images/images/comunity.png" alt="" />
+            <span>60 devs</span>
+            <a href="#">Unirme</a>
+          </article>
+          <article class="comunity-card--item youtube">
+            <h4>Youtube</h4>
+            <img src="./images/images/comunity.png" alt="" />
+            <span>60 devs</span>
+            <a href="#">Unirme</a>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
