@@ -195,6 +195,10 @@ body {
   padding: 2px 5px;
   border-radius: 7px;
 }
+
+.instagram {
+  margin-top: 20px;
+}
 .instagram-reels {
   display: flex;
   height: auto;
@@ -205,6 +209,42 @@ body {
 .instagram-reels img {
   width: 120px;
   margin-right: 10px;
+}
+
+.recomendation-card {
+  display: flex;
+  /* height: auto; */
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.recomendation-card--item {
+  background-color: var(--black);
+  width: 70%;
+  min-width: 200px;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.recomendation-card--header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.recomendation-card--header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.recomendation-card--info {
+  margin-bottom: 10px;
+}
+.recomendation-card a {
+  color: rgb(107, 147, 249);
 }
 
 /* ****** style generals */
