@@ -151,15 +151,7 @@ body {
 .comunity {
   margin-top: 30px;
 }
-.comunity h3 {
-  font-size: 1.7rem;
-  color: var(--yellow);
-}
 
-.comunity p {
-  margin: 10px;
-  font-size: 1.3rem;
-}
 .comunity-card {
   display: flex;
   justify-content: space-evenly;
@@ -200,10 +192,34 @@ body {
 .comunity-card--item a {
   color: #000;
   font-size: 1.3rem;
-  /* background-color: #005908; */
   padding: 2px 5px;
   border-radius: 7px;
 }
+.instagram-reels {
+  display: flex;
+  height: auto;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.instagram-reels img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+/* ****** style generals */
+
+.title-gen {
+  font-size: 1.7rem;
+  color: var(--yellow);
+}
+
+.text-gen {
+  margin: 10px;
+  font-size: 1.3rem;
+}
+
+/* ******* */
 
 .is-dark-mode {
   --base: #000;
