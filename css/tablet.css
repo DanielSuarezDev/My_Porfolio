@@ -1,0 +1,45 @@
+.hero {
+  height: 340px;
+}
+.last-stream--img img {
+  width: 700px;
+  height: 200px;
+}
+
+.photo-container img {
+  width: 80px;
+  height: 80px;
+}
+
+.photo-container {
+  top: 155px;
+  left: calc(50% - 40px);
+}
+
+.info-hours--details h3 {
+  font-size: 1.8rem;
+}
+.info-hours--details p {
+  font-size: 1.6rem;
+}
+
+.info-hours-call {
+  width: 50%;
+  font-size: 1.6rem;
+}
+.instagram-reels {
+  display: flex;
+  height: 220px;
+  overflow-x: hidden;
+}
+
+.recomendation-card {
+  display: flex;
+  height: 150px;
+  overflow-x: hidden;
+}
+
+.header-social img {
+  width: 20px;
+  height: 20px;
+}

@@ -9,13 +9,14 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   scroll-behavior: smooth;
 }
 
 body {
   background: var(--black_1);
   color: var(--color);
+  font-weight: 100;
 }
 
 :root {
@@ -43,6 +44,7 @@ body {
   --black_1: #181821;
   --morado: #853bce;
   --yellow: #fed500;
+  --marginTop: 40px;
 }
 .container {
   width: 90%;
@@ -60,8 +62,10 @@ body {
 }
 .header-social {
   width: 70%;
+  height: 30px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .header-social img {
   width: 16px;
@@ -79,9 +83,13 @@ body {
   text-align: center;
   /* margin: 0 5px; */
 }
-/* .last-stream--img img {
-  width: 50%;
-} */
+.last-stream--img img {
+  width: 100%;
+}
+.photo-container img {
+  width: 70px;
+  height: 70px;
+}
 .photo-container {
   position: absolute;
   top: 85px;
@@ -102,7 +110,7 @@ body {
   text-align: justify;
 }
 .info-hours {
-  margin-top: 30px;
+  margin-top: var(--marginTop);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +133,7 @@ body {
   width: 80%;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: var(--marginTop);
 }
 .info-hours-call a {
   display: flex;
@@ -149,7 +157,7 @@ body {
 }
 
 .comunity {
-  margin-top: 30px;
+  margin-top: var(--marginTop);
 }
 
 .comunity-card {
@@ -197,11 +205,11 @@ body {
 }
 
 .instagram {
-  margin-top: 20px;
+  margin-top: var(--marginTop);
 }
 .instagram-reels {
   display: flex;
-  height: auto;
+  height: 250px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
@@ -211,9 +219,13 @@ body {
   margin-right: 10px;
 }
 
+.recomendation {
+  margin-top: var(--marginTop);
+}
+
 .recomendation-card {
   display: flex;
-  /* height: auto; */
+  height: 220px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
