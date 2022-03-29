@@ -1,8 +1,25 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper_1 {
+  width: 50%;
+  position: absolute;
+  left: 0;
+}
+.wrapper_2 {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  margin-left: 40px;
+}
+
 .hero {
   height: 340px;
 }
 .last-stream--img img {
-  width: 700px;
+  width: 90%;
   height: 200px;
 }
 
@@ -15,12 +32,15 @@
   top: 155px;
   left: calc(50% - 40px);
 }
-
+.info-text {
+  padding: 0 25px;
+  font-size: 2rem;
+}
 .info-hours--details h3 {
   font-size: 1.8rem;
 }
 .info-hours--details p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .info-hours-call {
